@@ -1,0 +1,1 @@
+execute if predicate iva.esb:craft/live_crafting_table/copper_pumpkin run function iva.esb:block/live_crafting_table/craft/copper_pumpkin

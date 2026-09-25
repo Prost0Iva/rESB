@@ -1,0 +1,24 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:glow_item_frame"
+          }
+        ],
+        "modifier": [
+          {
+            "type": "minecraft:set_components",
+            "components": {
+              "custom_data":{"iva.esb.block":"live_crafting_table"},
+              "item_name": {"translate":"iva.esb:block.live_crafting_table"},
+              "item_model": "iva.esb:block/live_crafting_table",
+              "entity_data": {"id":"glow_item_frame", "Invisible":true, "Silent":true, "Tags":["iva.esb.block.live_crafting_table_placer"]}
+            }
+          }
+        ]
+      }
+    ]
+  }
