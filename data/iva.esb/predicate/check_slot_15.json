@@ -19,13 +19,6 @@
           }
         }
       }
-    },
-    {
-      "type": "minecraft:entity_scores",
-      "entity": "this",
-      "scores": {
-        "iva.esb.crafting": 0
-      }
     }
   ]
 }

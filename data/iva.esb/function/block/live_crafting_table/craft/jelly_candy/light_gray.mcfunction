@@ -1,3 +1,2 @@
 execute if items block ~ ~ ~ container.15 jigsaw[custom_data={iva.esb.empty_slot:1b}] run item replace block ~ ~ ~ container.15 with jigsaw[item_model="iva.esb:jelly_candy",custom_model_data={strings:["light_gray"]},item_name={translate:"iva.esb.item.light_gray_jelly_candy"},rarity=common,custom_data={iva.esb.item:"light_gray_jelly_candy",iva.esb.craft_result:1b},food={nutrition:1,saturation:0,can_always_eat:1b},consumable={consume_seconds:.6}] 4
 execute if entity @a[distance=..64,predicate=iva.esb:player_has_craft_result] run function iva.esb:block/live_crafting_table/count_-1
-scoreboard players set @s iva.esb.crafting 2

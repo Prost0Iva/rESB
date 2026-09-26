@@ -1,5 +1,4 @@
 execute store result score @s iva.esb.container_slots if data block ~ ~ ~ Items[]
-execute if score @s iva.esb.crafting matches 1.. run scoreboard players remove @s iva.esb.crafting 2
 execute if predicate iva.esb:craft/live_crafting_table/copper_pumpkin run function iva.esb:block/live_crafting_table/craft/copper_pumpkin
 execute if score @s iva.esb.container_slots matches 21 if items block ~ ~ ~ iva.esb:live_crafting_table_caft sugar if items block ~ ~ ~ iva.esb:live_crafting_table_caft white_dye if items block ~ ~ ~ iva.esb:live_crafting_table_caft minecraft:jigsaw[custom_data={iva.esb.item:"gelatin"}] run function iva.esb:block/live_crafting_table/craft/jelly_candy/white
 execute if score @s iva.esb.container_slots matches 21 if items block ~ ~ ~ iva.esb:live_crafting_table_caft sugar if items block ~ ~ ~ iva.esb:live_crafting_table_caft black_dye if items block ~ ~ ~ iva.esb:live_crafting_table_caft minecraft:jigsaw[custom_data={iva.esb.item:"gelatin"}] run function iva.esb:block/live_crafting_table/craft/jelly_candy/black
