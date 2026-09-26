@@ -9,3 +9,4 @@ execute if block ~ ~ ~ barrel[open=false] if data block ~ ~ ~ Items[0] run data 
 
 execute if block ~ ~ ~ barrel[open=true] unless items block ~ ~ ~ iva.esb:live_crafting_table * run item fill block ~ ~ ~ iva.esb:live_crafting_table with jigsaw[custom_data={iva.esb.empty_slot:1b},tooltip_display={hide_tooltip:1b},item_model="iva.esb:none"]
 execute if block ~ ~ ~ barrel[open=true] unless items block ~ ~ ~ container.15 * run item fill block ~ ~ ~ container.15 with jigsaw[custom_data={iva.esb.empty_slot:1b},tooltip_display={hide_tooltip:1b},item_model="iva.esb:none"]
+execute if block ~ ~ ~ barrel[open=true] if predicate iva.esb:check_slot_15 run item fill block ~ ~ ~ container.15 with jigsaw[custom_data={iva.esb.empty_slot:1b},tooltip_display={hide_tooltip:1b},item_model="iva.esb:none"]
