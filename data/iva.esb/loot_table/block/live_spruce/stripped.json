@@ -1,0 +1,25 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:glow_item_frame"
+          }
+        ],
+        "modifier": [
+          {
+            "type": "minecraft:set_components",
+            "components": {
+              "custom_data":{"iva.esb.block":"live_spruce_stripped"},
+              "item_name": {"translate":"iva.esb:block.live_spruce_stripped"},
+              "item_model": "iva.esb:block/live_spruce",
+              "custom_model_data": {"strings": ["stripped"]},
+              "entity_data": {"id":"glow_item_frame", "Invisible":true, "Silent":true, "Tags":["iva.esb.block.live_spruce_stripped_placer"]}
+            }
+          }
+        ]
+      }
+    ]
+  }

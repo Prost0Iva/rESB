@@ -1,0 +1,2 @@
+execute if items block ~ ~ ~ container.15 jigsaw[custom_data={iva.esb.empty_slot:1b}] run item replace block ~ ~ ~ container.15 with glow_item_frame[custom_data={"iva.esb.block":"live_spruce_planks",iva.esb.craft_result:1b},item_name={"translate":"iva.esb:block.live_spruce_planks"},item_model="iva.esb:block/live_spruce",entity_data={"id":"glow_item_frame", "Invisible":true, "Silent":true, "Tags":["iva.esb.block.live_spruce_planks_placer"]}] 4
+execute if entity @a[distance=..64,predicate=iva.esb:player_has_craft_result] run function iva.esb:block/live_crafting_table/count_-1

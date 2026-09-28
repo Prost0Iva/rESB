@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ spruce_fence[north=false,east=false,south=false,west=false] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["fence/fence"]}
+execute if block ~ ~ ~ spruce_fence[north=true,east=false,south=false,west=false] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["fence/s"]}
+execute if block ~ ~ ~ spruce_fence[north=false,east=true,south=false,west=false] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["fence/w"]}
+execute if block ~ ~ ~ spruce_fence[north=false,east=false,south=true,west=false] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["fence/n"]}
+execute if block ~ ~ ~ spruce_fence[north=false,east=false,south=false,west=true] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["fence/e"]}
+execute if block ~ ~ ~ spruce_fence[north=true,east=true,south=false,west=false] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["fence/sw"]}
+execute if block ~ ~ ~ spruce_fence[north=true,east=false,south=true,west=false] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["fence/ns"]}
+execute if block ~ ~ ~ spruce_fence[north=true,east=false,south=false,west=true] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["fence/se"]}
+execute if block ~ ~ ~ spruce_fence[north=false,east=true,south=true,west=false] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["fence/nw"]}
+execute if block ~ ~ ~ spruce_fence[north=false,east=false,south=true,west=true] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["fence/ne"]}
+execute if block ~ ~ ~ spruce_fence[north=false,east=true,south=false,west=true] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["fence/we"]}
+execute if block ~ ~ ~ spruce_fence[north=false,east=true,south=true,west=true] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["fence/nwe"]}
+execute if block ~ ~ ~ spruce_fence[north=true,east=false,south=true,west=true] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["fence/nse"]}
+execute if block ~ ~ ~ spruce_fence[north=true,east=true,south=false,west=true] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["fence/swe"]}
+execute if block ~ ~ ~ spruce_fence[north=true,east=true,south=true,west=false] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["fence/nsw"]}
+execute if block ~ ~ ~ spruce_fence[north=true,east=true,south=true,west=true] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["fence/nswe"]}

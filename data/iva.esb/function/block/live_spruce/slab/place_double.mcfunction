@@ -1,0 +1,10 @@
+tag @s add iva.esb.double_placer
+execute align xyz run summon item_display ~-.0001 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce"}},Tags:[iva.esb.block.side.-x],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.001f,1f,1f],translation:[0f,0f,0f]}}
+execute align xyz run summon item_display ~.5 ~-.0001 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce"}},Tags:[iva.esb.block.live_spruce_slab,iva.esb.block.side.-y,iva.esb.block.type.double],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1f,0.001f,1f],translation:[0f,0f,0f]}}
+execute align xyz run summon item_display ~.5 ~.5 ~-.0001 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce"}},Tags:[iva.esb.block.side.-z],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1f,1f,0.001f],translation:[0f,0f,0f]}}
+execute align xyz run summon item_display ~1.0001 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce"}},Tags:[iva.esb.block.side.x],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.001f,1f,1f],translation:[0f,0f,0f]}}
+execute align xyz run summon item_display ~.5 ~1.0001 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce"}},Tags:[iva.esb.block.side.y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1f,0.001f,1f],translation:[0f,0f,0f]}}
+execute align xyz run summon item_display ~.5 ~.5 ~1.0001 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce"}},Tags:[iva.esb.block.side.z],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1f,1f,0.001f],translation:[0f,0f,0f]}}
+setblock ~ ~ ~ spruce_slab[type=double]
+kill @n[type=item_display,tag=iva.esb.block.live_spruce_slab,distance=...1]
+kill

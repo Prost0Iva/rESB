@@ -1,0 +1,4 @@
+execute if block ~ ~ ~ spruce_trapdoor[open=false,half=bottom] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["trapdoor_bottom"]}
+execute if block ~ ~ ~ spruce_trapdoor[open=true,half=bottom] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["trapdoor_bottom_open"]}
+execute if block ~ ~ ~ spruce_trapdoor[open=false,half=top] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["trapdoor_top"]}
+execute if block ~ ~ ~ spruce_trapdoor[open=true,half=top] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["trapdoor_top_open"]}

@@ -1,0 +1,52 @@
+execute store result score #block_place_rotation iva.esb.block_place_param run data get entity @n[type=player,scores={iva.esb.glow_item_frame_use=1..},distance=..64] Rotation[0]
+execute store result score #block_top_position iva.esb.block_place_param if entity @n[type=player,scores={iva.esb.glow_item_frame_use=1..},distance=..64,predicate=iva.esb:on_shift]
+#floor_n
+execute if entity @s[nbt={Facing:1b}] if score #block_place_rotation iva.esb.block_place_param matches -180..-136 run summon item_display ~.5 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["button_floor"]}}},Tags:[iva.esb.block.live_spruce_button,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1.001f,1.001f,1.001f],translation:[0f,0f,0f]}}
+execute if entity @s[nbt={Facing:1b}] if score #block_place_rotation iva.esb.block_place_param matches 135..180 run summon item_display ~.5 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["button_floor"]}}},Tags:[iva.esb.block.live_spruce_button,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1.001f,1.001f,1.001f],translation:[0f,0f,0f]}}
+execute if entity @s[nbt={Facing:1b}] if score #block_place_rotation iva.esb.block_place_param matches -180..-136 run setblock ~ ~ ~ spruce_button[facing=north,face=floor] keep
+execute if entity @s[nbt={Facing:1b}] if score #block_place_rotation iva.esb.block_place_param matches 135..180 run setblock ~ ~ ~ spruce_button[facing=north,face=floor] keep
+
+#floor_e
+execute if entity @s[nbt={Facing:1b}] if score #block_place_rotation iva.esb.block_place_param matches -135..-46 run summon item_display ~.5 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["button_floor"]}}},Tags:[iva.esb.block.live_spruce_button,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1.001f,1.001f,1.001f],translation:[0f,0f,0f]},Rotation:[90.0f,0.0f]}
+execute if entity @s[nbt={Facing:1b}] if score #block_place_rotation iva.esb.block_place_param matches -135..-46 run setblock ~ ~ ~ spruce_button[facing=east,face=floor] keep
+
+#floor_s
+execute if entity @s[nbt={Facing:1b}] if score #block_place_rotation iva.esb.block_place_param matches -45..0 run summon item_display ~.5 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["button_floor"]}}},Tags:[iva.esb.block.live_spruce_button,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1.001f,1.001f,1.001f],translation:[0f,0f,0f]},Rotation:[180.0f,0.0f]}
+execute if entity @s[nbt={Facing:1b}] if score #block_place_rotation iva.esb.block_place_param matches 0..44 run summon item_display ~.5 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["button_floor"]}}},Tags:[iva.esb.block.live_spruce_button,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1.001f,1.001f,1.001f],translation:[0f,0f,0f]},Rotation:[180.0f,0.0f]}
+execute if entity @s[nbt={Facing:1b}] if score #block_place_rotation iva.esb.block_place_param matches -45..0 run setblock ~ ~ ~ spruce_button[facing=south,face=floor] keep
+execute if entity @s[nbt={Facing:1b}] if score #block_place_rotation iva.esb.block_place_param matches 0..44 run setblock ~ ~ ~ spruce_button[facing=south,face=floor] keep
+
+#floor_w
+execute if entity @s[nbt={Facing:1b}] if score #block_place_rotation iva.esb.block_place_param matches 45..134 run summon item_display ~.5 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["button_floor"]}}},Tags:[iva.esb.block.live_spruce_button,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1.001f,1.001f,1.001f],translation:[0f,0f,0f]},Rotation:[270.0f,0.0f]}
+execute if entity @s[nbt={Facing:1b}] if score #block_place_rotation iva.esb.block_place_param matches 45..134 run setblock ~ ~ ~ spruce_button[facing=west,face=floor] keep
+
+#ceiling_n
+execute if entity @s[nbt={Facing:0b}] if score #block_place_rotation iva.esb.block_place_param matches -180..-136 run summon item_display ~.5 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["button_ceiling"]}}},Tags:[iva.esb.block.live_spruce_button,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1.001f,1.001f,1.001f],translation:[0f,0f,0f]}}
+execute if entity @s[nbt={Facing:0b}] if score #block_place_rotation iva.esb.block_place_param matches 135..180 run summon item_display ~.5 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["button_ceiling"]}}},Tags:[iva.esb.block.live_spruce_button,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1.001f,1.001f,1.001f],translation:[0f,0f,0f]}}
+execute if entity @s[nbt={Facing:0b}] if score #block_place_rotation iva.esb.block_place_param matches -180..-136 run setblock ~ ~ ~ spruce_button[facing=north,face=ceiling] keep
+execute if entity @s[nbt={Facing:0b}] if score #block_place_rotation iva.esb.block_place_param matches 135..180 run setblock ~ ~ ~ spruce_button[facing=north,face=ceiling] keep
+
+#ceiling_e
+execute if entity @s[nbt={Facing:0b}] if score #block_place_rotation iva.esb.block_place_param matches -135..-46 run summon item_display ~.5 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["button_ceiling"]}}},Tags:[iva.esb.block.live_spruce_button,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1.001f,1.001f,1.001f],translation:[0f,0f,0f]},Rotation:[90.0f,0.0f]}
+execute if entity @s[nbt={Facing:0b}] if score #block_place_rotation iva.esb.block_place_param matches -135..-46 run setblock ~ ~ ~ spruce_button[facing=east,face=ceiling] keep
+
+#ceiling_s
+execute if entity @s[nbt={Facing:0b}] if score #block_place_rotation iva.esb.block_place_param matches -45..0 run summon item_display ~.5 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["button_ceiling"]}}},Tags:[iva.esb.block.live_spruce_button,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1.001f,1.001f,1.001f],translation:[0f,0f,0f]},Rotation:[180.0f,0.0f]}
+execute if entity @s[nbt={Facing:0b}] if score #block_place_rotation iva.esb.block_place_param matches 0..44 run summon item_display ~.5 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["button_ceiling"]}}},Tags:[iva.esb.block.live_spruce_button,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1.001f,1.001f,1.001f],translation:[0f,0f,0f]},Rotation:[180.0f,0.0f]}
+execute if entity @s[nbt={Facing:0b}] if score #block_place_rotation iva.esb.block_place_param matches -45..0 run setblock ~ ~ ~ spruce_button[facing=south,face=ceiling] keep
+execute if entity @s[nbt={Facing:0b}] if score #block_place_rotation iva.esb.block_place_param matches 0..44 run setblock ~ ~ ~ spruce_button[facing=south,face=ceiling] keep
+
+#ceiling_w
+execute if entity @s[nbt={Facing:0b}] if score #block_place_rotation iva.esb.block_place_param matches 45..134 run summon item_display ~.5 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["button_ceiling"]}}},Tags:[iva.esb.block.live_spruce_button,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1.001f,1.001f,1.001f],translation:[0f,0f,0f]},Rotation:[270.0f,0.0f]}
+execute if entity @s[nbt={Facing:0b}] if score #block_place_rotation iva.esb.block_place_param matches 45..134 run setblock ~ ~ ~ spruce_button[facing=west,face=ceiling] keep
+
+execute if entity @s[nbt={Facing:3b}] run summon item_display ~.5 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["button"]}}},Tags:[iva.esb.block.live_spruce_button,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1.001f,1.001f,1.001f],translation:[0f,0f,0f]}}
+execute if entity @s[nbt={Facing:3b}] run setblock ~ ~ ~ spruce_button[face=wall,facing=south] keep
+execute if entity @s[nbt={Facing:4b}] run summon item_display ~.5 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["button"]}}},Tags:[iva.esb.block.live_spruce_button,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1.001f,1.001f,1.001f],translation:[0f,0f,0f]},Rotation:[90.0f,0.0f]}
+execute if entity @s[nbt={Facing:4b}] run setblock ~ ~ ~ spruce_button[face=wall,facing=west] keep
+execute if entity @s[nbt={Facing:2b}] run summon item_display ~.5 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["button"]}}},Tags:[iva.esb.block.live_spruce_button,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1.001f,1.001f,1.001f],translation:[0f,0f,0f]},Rotation:[180.0f,0.0f]}
+execute if entity @s[nbt={Facing:2b}] run setblock ~ ~ ~ spruce_button[face=wall,facing=north] keep
+execute if entity @s[nbt={Facing:5b}] run summon item_display ~.5 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["button"]}}},Tags:[iva.esb.block.live_spruce_button,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1.001f,1.001f,1.001f],translation:[0f,0f,0f]},Rotation:[270.0f,0.0f]}
+execute if entity @s[nbt={Facing:5b}] run setblock ~ ~ ~ spruce_button[face=wall,facing=east] keep
+
+kill @s

@@ -1,0 +1,11 @@
+function iva.esb:block/live_spruce/planks/planks
+function iva.esb:block/live_spruce/log/log
+function iva.esb:block/live_spruce/stripped/stripped
+function iva.esb:block/live_spruce/stairs/stairs
+function iva.esb:block/live_spruce/slab/slab
+function iva.esb:block/live_spruce/fence/fence
+function iva.esb:block/live_spruce/fence_gate/fence_gate
+function iva.esb:block/live_spruce/door/door
+function iva.esb:block/live_spruce/trapdoor/trapdoor
+function iva.esb:block/live_spruce/pressure_plate/pressure_plate
+function iva.esb:block/live_spruce/button/button
