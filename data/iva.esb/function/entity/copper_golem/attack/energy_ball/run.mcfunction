@@ -1,0 +1,2 @@
+execute anchored eyes positioned ^ ^ ^.5 run summon item_display ~ ~ ~ {Tags:[iva.esb.entity.energy_ball]}
+execute anchored eyes positioned ^ ^ ^.5 run data modify entity @n[type=item_display,tag=iva.esb.entity.energy_ball,distance=...1] Rotation set from entity @s Rotation

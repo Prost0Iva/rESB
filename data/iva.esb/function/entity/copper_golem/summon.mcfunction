@@ -1,0 +1,4 @@
+summon parched ~ ~ ~ {Tags:["iva.esb.entity_brain","iva.esb.entity.copper_golem"], active_effects:[{id:"invisibility",duration:-1,show_particles:false}], DeathLootTable:"iva.esb:entity/copper_golem",CustomName:{translate:"iva.esb:entity.copper_golem"},attributes:[{id:scale,base:1},{id:max_health,base:175},{id:"attack_damage",base:7.5}],CanPickUpLoot:false,Silent:true,equipment:{},drop_chances:{}}
+summon item_display ~ ~ ~ {Tags:["iva.esb.entity_model","iva.esb.entity.copper_golem"], item:{id:"egg",components:{item_model:"iva.esb:entity/copper_golem"}},teleport_duration:2}
+scoreboard players add #id iva.esb.entity_id 1
+scoreboard players operation @e[tag=iva.esb.entity.copper_golem,distance=...1,limit=2,sort=nearest] iva.esb.entity_id = #id iva.esb.entity_id

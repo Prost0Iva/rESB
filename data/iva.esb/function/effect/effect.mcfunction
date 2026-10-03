@@ -1,0 +1,1 @@
+execute as @e[scores={iva.esb.effect.conductivity=1..}] run function iva.esb:effect/conductivity/conductivity

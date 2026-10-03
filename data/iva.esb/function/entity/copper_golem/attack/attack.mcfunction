@@ -1,0 +1,2 @@
+execute as @e[type=item_display,tag=iva.esb.entity.energy_ball] run function iva.esb:entity/copper_golem/attack/energy_ball/energy_ball
+execute as @e[type=item_display,tag=iva.esb.entity.shock_wave] run function iva.esb:entity/copper_golem/attack/shock_wave/shock_wave

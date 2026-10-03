@@ -1,0 +1,1 @@
+summon item_display ~ ~ ~ {Tags:[iva.esb.entity.shock_wave]}
