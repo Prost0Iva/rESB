@@ -1,13 +1,23 @@
 {
-  "type": "minecraft:sub",
-  "left": {
-    "type": "minecraft:storage",
-    "storage": "iva.esb:motion",
-    "path": "pos2[0]"
-  },
-  "right": {
-    "type": "minecraft:storage",
-    "storage": "iva.esb:motion",
-    "path": "pos1[0]"
-  }
+  "type": "minecraft:mul",
+  "inputs": [
+    {
+      "type": "minecraft:sub",
+      "left": {
+        "type": "minecraft:storage",
+        "storage": "iva.esb:motion",
+        "path": "pos2[0]"
+      },
+      "right": {
+        "type": "minecraft:storage",
+        "storage": "iva.esb:motion",
+        "path": "pos1[0]"
+      }
+    },
+    {
+      "type": "minecraft:storage",
+      "storage": "iva.esb:motion",
+      "path": "scale[0]"
+    }
+  ]
 }
