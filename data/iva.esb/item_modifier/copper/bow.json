@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_data": {
+      "iva.esb.item": "copper_bow",
+      "iva.esb.craft_result":false,
+      "iva.esb.bow_damage": 2.0
+    },
+    "minecraft:item_model": "iva.esb:copper_bow",
+    "lore":[{"text":""},{"translate":"item.modifiers.hand","color":"gray","italic":false},{"color":"dark_green","italic":false,"translate":"attribute.modifier.equals.0","with":[" 2",{"translate":"attribute.name.arrow_damage_multiplier"}]}]
+  }
+}

@@ -1,5 +1,5 @@
-execute if score @s iva.esb.entity_lifetime matches 10.. at @s positioned ~-.2 ~-.2 ~-.2 as @e[tag=!iva.esb.entity.energy_ball,dx=0] positioned ~-.8 ~-.8 ~-.8 if entity @s[dx=0] positioned ~1 ~1 ~1 run damage @s 7.5 arrow at ~ ~ ~
-execute if score @s iva.esb.entity_lifetime matches 10.. at @s positioned ~-.2 ~-.2 ~-.2 as @e[tag=!iva.esb.entity.energy_ball,dx=0] positioned ~-.8 ~-.8 ~-.8 if entity @s[dx=0] run scoreboard players add @s iva.esb.effect.conductivity 300
+execute if score @s iva.esb.entity_lifetime matches 10.. at @s positioned ~-.8 ~-.2 ~-.8 as @e[type=!#iva.esb:no_mob,tag=!iva.esb.entity.energy_ball,dx=0] positioned ~.6 ~-.6 ~.6 if entity @s[dx=0] positioned ~1 ~1 ~1 run damage @s 7.5 arrow at ~ ~ ~
+execute if score @s iva.esb.entity_lifetime matches 10.. at @s positioned ~-.8 ~-.2 ~-.8 as @e[type=!#iva.esb:no_mob,tag=!iva.esb.entity.energy_ball,dx=0] positioned ~.6 ~-.6 ~.6 if entity @s[dx=0] run scoreboard players add @s iva.esb.effect.conductivity 300
 execute at @s run particle dust{color:[0.35,1.0,0.96],scale:2} ~ ~ ~ 0 0 0 0 1 force
 scoreboard players add @s iva.esb.entity_lifetime 1
 execute if score @s iva.esb.entity_lifetime matches 100.. run kill

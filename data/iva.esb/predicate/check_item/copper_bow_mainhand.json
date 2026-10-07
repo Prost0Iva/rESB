@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:slots": {
+      "weapon.mainhand": {
+        "items": "bow",
+        "predicates": {
+          "minecraft:custom_data": {
+            "iva.esb.item": "copper_bow"
+          }
+        }
+      }
+    }
+  }
+}

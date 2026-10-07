@@ -9,8 +9,10 @@ scoreboard objectives add iva.esb.entity_sound dummy
 scoreboard objectives add iva.esb.entity_lifetime dummy
 scoreboard objectives add iva.esb.entity_motion dummy
 scoreboard objectives add iva.esb.entity_health dummy
+scoreboard objectives add iva.esb.arrow_effect_delay dummy
 
 scoreboard objectives add iva.esb.player_rotation_x dummy
+scoreboard objectives add iva.esb.player_death deathCount
 scoreboard objectives add iva.esb.raycast dummy
 
 scoreboard objectives add iva.esb.block_place_param dummy

@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:jigsaw",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "item_model":"iva.esb:weather_battery",
+                "item_name":{"translate":"iva.esb:item.weather_battery"},
+                "custom_data":{"iva.esb.item":"weather_battery"},
+                "rarity":"uncommon",
+                "tooltip_style":"iva.esb:uncommon"
+              }
+            },
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 3
+              }
+            },
+            {
+              "type": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              },
+              "enchantment": "minecraft:looting"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
