@@ -1,0 +1,1 @@
+execute as @e[tag=!entityidset] run function iva.esb:api/hit_detect/assign_id

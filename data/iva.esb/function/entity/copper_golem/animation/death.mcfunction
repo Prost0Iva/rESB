@@ -3,5 +3,5 @@ execute if score @s iva.esb.entity_animation matches 1 run tag @s add iva.esb.an
 execute if score @s iva.esb.entity_animation matches 1 at @s run playsound minecraft:entity.copper_golem.death hostile @a ~ ~ ~ 1 0
 execute if score @s iva.esb.entity_animation matches 1 run data modify entity @s item.components."minecraft:custom_model_data" set value {strings:["death"]}
 #execute if score @s iva.esb.entity_animation matches 1 run data modify entity @s item.components."minecraft:potion_contents" set value {custom_color:0}
-execute if score @s iva.esb.entity_animation matches 1 store result entity @s item.components."minecraft:potion_contents".custom_color int 1 run scoreboard players operation #gametime iva.esb.entity_animation %= #40 iva.esb.entity_animation
+execute if score @s iva.esb.entity_animation matches 1 store result entity @s item.components."minecraft:potion_contents".custom_color int 1 run scoreboard players operation #gametime iva.esb.entity_animation %= #40 iva.esb.const
 execute if score @s iva.esb.entity_animation matches 39 run kill
