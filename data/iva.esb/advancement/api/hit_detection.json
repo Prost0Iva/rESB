@@ -1,5 +1,39 @@
 {
   "criteria": {
+    "charged_copper_sword": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "minecraft:slots": {
+              "weapon.mainhand": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "iva.esb.item": "charged_copper_sword"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "copper_arrow": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "minecraft:entity_tags": {
+                "all_of": [
+                  "iva.esb.entity.copper_arrow"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
     "not_target": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
@@ -797,6 +831,10 @@
         }
     },
     "requirements": [
+        [
+            "copper_arrow",
+            "charged_copper_sword"
+        ],
         [
             "target",
             "not_target"

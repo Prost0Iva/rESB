@@ -31,4 +31,4 @@ execute if entity @s[advancements={iva.esb:api/hit_detection={bit28=true}}] run 
 execute if entity @s[advancements={iva.esb:api/hit_detection={bit29=true}}] run scoreboard players add $hit iva.esb.entity_hit_detection_id 536870912
 execute if entity @s[advancements={iva.esb:api/hit_detection={bit30=true}}] run scoreboard players add $hit iva.esb.entity_hit_detection_id 1073741824
 execute if entity @s[advancements={iva.esb:api/hit_detection={bit31=true}}] run scoreboard players operation $hit iva.esb.entity_hit_detection_id *= #-1 iva.esb.const
-execute as @e if score @s iva.esb.entity_hit_detection_id = $hit iva.esb.entity_hit_detection_id run say 1
+function iva.esb:api/hit_detect/criteria_check
