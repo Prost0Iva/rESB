@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:all_of",
+  "terms": [
+    {
+      "type": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": "minecraft:furnace",
+          "nbt": {
+            "Items": [
+              {
+                "id": "minecraft:jigsaw",
+                "components": {
+                  "minecraft:custom_data": {
+                    "iva.esb.item": "raw_stalum"
+                  }
+                },
+                "Slot": 0
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:any_of",
+      "terms": [
+        {
+          "type": "minecraft:inverted",
+          "term": {
+            "type": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "furnace",
+                "nbt": {
+                  "Items": [
+                    {
+                      "id": "",
+                      "Slot": 2
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:location_check",
+          "predicate": {
+            "block": {
+              "blocks": "furnace",
+              "nbt": {
+                "Items": [
+                  {
+                    "id": "",
+                    "components": {
+                      "minecraft:custom_data": {
+                        "iva.esb.item": "stalum_ingot"
+                      }
+                    },
+                    "Slot": 2
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

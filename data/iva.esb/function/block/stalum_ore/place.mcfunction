@@ -1,0 +1,8 @@
+summon item_display ~-.0001 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/stalum_ore"}},Tags:[iva.esb.block.side.-x],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.001f,1f,1f],translation:[0f,0f,0f]}}
+summon item_display ~.5 ~-.0001 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/stalum_ore"}},Tags:[iva.esb.block.stalum_ore,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1f,0.001f,1f],translation:[0f,0f,0f]}}
+summon item_display ~.5 ~.5 ~-.0001 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/stalum_ore"}},Tags:[iva.esb.block.side.-z],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1f,1f,0.001f],translation:[0f,0f,0f]}}
+summon item_display ~1.0001 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/stalum_ore"}},Tags:[iva.esb.block.side.x],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.001f,1f,1f],translation:[0f,0f,0f]}}
+summon item_display ~.5 ~1.0001 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/stalum_ore"}},Tags:[iva.esb.block.side.y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1f,0.001f,1f],translation:[0f,0f,0f]}}
+summon item_display ~.5 ~.5 ~1.0001 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/stalum_ore"}},Tags:[iva.esb.block.side.z],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1f,1f,0.001f],translation:[0f,0f,0f]}}
+setblock ~ ~ ~ gray_glazed_terracotta keep
+kill @s

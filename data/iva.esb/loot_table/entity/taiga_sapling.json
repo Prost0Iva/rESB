@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:glow_item_frame"
+          }
+        ],
+        "modifier": [
+          {
+            "type": "minecraft:set_components",
+            "components": {
+              "cooking_fuel":{"burn_time":300,"speed_multiplier":"minecraft:cooking/speed_default"},
+              "custom_data":{"iva.esb.block":"live_spruce_log"},
+              "item_name": {"translate":"iva.esb:block.live_spruce_log"},
+              "item_model": "iva.esb:block/live_spruce",
+              "custom_model_data": {"strings": ["log"]},
+              "entity_data": {"id":"glow_item_frame", "Invisible":true, "Silent":true, "Tags":["iva.esb.block.live_spruce_log_placer"]}
+            }
+          },
+            {
+              "type": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              },
+              "enchantment": "minecraft:looting"
+            }
+          ]
+        },
+        {
+      "rolls": 1,
+      "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stick"
+          }
+        ],
+        "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 3
+              }
+            },
+            {
+              "type": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              },
+              "enchantment": "minecraft:looting"
+            }
+          ]
+        }
+      ]
+    }

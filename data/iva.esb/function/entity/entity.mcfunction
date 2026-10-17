@@ -4,3 +4,4 @@ scoreboard players operation #gametime iva.esb.entity_animation %= #24000 iva.es
 function iva.esb:entity/jellyfish/jellyfish
 function iva.esb:entity/taiga_sapling/taiga_sapling
 function iva.esb:entity/copper_golem/copper_golem
+function iva.esb:entity/iceologer/iceologer

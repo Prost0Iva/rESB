@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:slots": {
+      "armor.head": {
+        "items": "copper_helmet",
+        "predicates": {
+          "minecraft:custom_data": {
+            "iva.esb.item": "charged_copper_helmet"
+          }
+        }
+      },
+      "armor.chest": {
+        "items": "copper_chestplate",
+        "predicates": {
+          "minecraft:custom_data": {
+            "iva.esb.item": "charged_copper_chestplate"
+          }
+        }
+      },
+      "armor.legs": {
+        "items": "copper_leggings",
+        "predicates": {
+          "minecraft:custom_data": {
+            "iva.esb.item": "charged_copper_leggings"
+          }
+        }
+      },
+      "armor.feet": {
+        "items": "copper_boots",
+        "predicates": {
+          "minecraft:custom_data": {
+            "iva.esb.item": "charged_copper_boots"
+          }
+        }
+      }
+    }
+  }
+}

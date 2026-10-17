@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "item_model": "iva.esb:charged_copper_helmet",
+    "custom_data": {
+      "iva.esb.item":"charged_copper_helmet",
+      "iva.esb.craft_result":false
+    },
+    "attribute_modifiers":[
+      {
+        "type":"armor",
+        "id":"iva.esb:item.charged_copper_helmet",
+        "amount":4,
+        "operation":"add_value",
+        "slot":"head"
+      },
+      {
+        "type":"armor_toughness",
+        "id":"iva.esb:item.charged_copper_helmet",
+        "amount":1,
+        "operation":"add_value",
+        "slot":"head"
+      }
+    ],
+    "equippable":{
+      "asset_id":"iva.esb:charged_copper",
+      "slot":"head",
+      "equip_sound":{"sound_id":"minecraft:item.armor.equip_copper"}
+    }
+  }
+}

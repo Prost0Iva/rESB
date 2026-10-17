@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:all_of",
+      "terms": [
+        {
+          "type": "minecraft:location_check",
+          "predicate": {
+            "block": {
+              "nbt": {
+                "Items": [
+                  {
+                    "id": "minecraft:copper_ingot",
+                    "Slot": 1
+                  },
+                  {
+                    "id": "minecraft:jigsaw",
+                    "Slot": 2,
+                    "components": {"minecraft:custom_data": {"iva.esb.item":"weather_battery"}}
+                  },
+                  {
+                    "id": "minecraft:copper_ingot",
+                    "Slot": 3
+                  },
+                  {
+                    "id": "minecraft:copper_ingot",
+                    "Slot": 10
+                  },
+                  {
+                    "id": "minecraft:furnace",
+                    "Slot": 11
+                  },
+                  {
+                    "id": "minecraft:copper_ingot",
+                    "Slot": 12
+                  },
+                  {
+                    "id": "minecraft:smooth_stone",
+                    "Slot": 19
+                  },
+                  {
+                    "id": "minecraft:smooth_stone",
+                    "Slot": 20
+                  },
+                  {
+                    "id": "minecraft:smooth_stone",
+                    "Slot": 21
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "item_model": "iva.esb:charged_copper_chestplate",
+    "custom_data": {
+      "iva.esb.item":"charged_copper_chestplate",
+      "iva.esb.craft_result":false
+    },
+    "attribute_modifiers":[
+      {
+        "type":"armor",
+        "id":"iva.esb:item.charged_copper_chestplate",
+        "amount":6,
+        "operation":"add_value",
+        "slot":"chest"
+      },
+      {
+        "type":"armor_toughness",
+        "id":"iva.esb:item.charged_copper_chestplate",
+        "amount":1,
+        "operation":"add_value",
+        "slot":"chest"
+      }
+    ],
+    "equippable":{
+      "asset_id":"iva.esb:charged_copper",
+      "slot":"chest",
+      "equip_sound":{"sound_id":"minecraft:item.armor.equip_copper"}
+    }
+  }
+}

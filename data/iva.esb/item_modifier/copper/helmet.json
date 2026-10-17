@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "item_model": "iva.esb:copper_helmet",
+    "custom_data": {
+      "iva.esb.item":"copper_helmet",
+      "iva.esb.craft_result":false
+    },
+    "attribute_modifiers":[
+      {
+        "type":"armor",
+        "id":"iva.esb:item.copper_helmet",
+        "amount":2,
+        "operation":"add_value",
+        "slot":"head"
+      }
+    ],
+    "equippable":{
+      "asset_id":"iva.esb:copper",
+      "slot":"head",
+      "equip_sound":{"sound_id":"minecraft:item.armor.equip_copper"}
+    }
+  }
+}

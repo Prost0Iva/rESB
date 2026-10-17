@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:slots": {
+      "armor.legs": {
+        "items": "copper_leggings",
+        "predicates": {
+          "minecraft:custom_data": {
+            "iva.esb.item": "charged_copper_leggings"
+          }
+        }
+      }
+    }
+  }
+}

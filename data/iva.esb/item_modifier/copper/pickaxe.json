@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_data": {
+      "iva.esb.item": "copper_pickaxe",
+      "iva.esb.craft_result":false
+    },
+    "minecraft:item_model": "iva.esb:copper_pickaxe",
+    "minecraft:tool": {
+      "rules": [
+        {
+          "blocks": "#minecraft:incorrect_for_copper_tool",
+          "correct_for_drops": false
+        },
+        {
+          "blocks": "#minecraft:mineable/pickaxe",
+          "correct_for_drops": true,
+          "speed": 5.0
+        }
+      ]
+    }
+    
+  }
+}

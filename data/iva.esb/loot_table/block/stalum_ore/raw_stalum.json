@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:jigsaw",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "item_model":"iva.esb:raw_stalum",
+                "item_name":{"translate":"iva.esb:item.raw_stalum"},
+                "custom_data":{"iva.esb.item":"raw_stalum"},
+                "rarity":"common"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

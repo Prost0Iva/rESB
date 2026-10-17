@@ -12,6 +12,7 @@
           {
             "type": "minecraft:set_components",
             "components": {
+              "cooking_fuel":{"burn_time":300,"speed_multiplier":"minecraft:cooking/speed_default"},
               "custom_data":{"iva.esb.block":"live_spruce_fence","iva.esb.craft_result":false},
               "item_name": {"translate":"iva.esb:block.live_spruce_fence"},
               "item_model": "iva.esb:block/live_spruce",

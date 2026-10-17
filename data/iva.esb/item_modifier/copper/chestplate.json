@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "item_model": "iva.esb:copper_chestplate",
+    "custom_data": {
+      "iva.esb.item":"copper_chestplate",
+      "iva.esb.craft_result":false
+    },
+    "attribute_modifiers":[
+      {
+        "type":"armor",
+        "id":"iva.esb:item.copper_chestplate",
+        "amount":4,
+        "operation":"add_value",
+        "slot":"chest"
+      }
+    ],
+    "equippable":{
+      "asset_id":"iva.esb:copper",
+      "slot":"chest",
+      "equip_sound":{"sound_id":"minecraft:item.armor.equip_copper"}
+    }
+  }
+}

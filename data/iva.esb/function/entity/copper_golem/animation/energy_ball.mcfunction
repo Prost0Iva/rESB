@@ -8,7 +8,7 @@ execute if score @s iva.esb.entity_animation matches 1 run effect give @e[type=p
 execute if score @s iva.esb.entity_animation matches 25 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=!iva.esb.entity_boss_phase2,tag=!iva.esb.entity.copper_golem_thunder] at @s run function iva.esb:entity/copper_golem/attack/energy_ball/run
 execute if score @s iva.esb.entity_animation matches 25 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=iva.esb.entity_boss_phase2,tag=!iva.esb.entity.copper_golem_thunder] at @s run function iva.esb:entity/copper_golem/attack/energy_ball/run_3
 
-execute if score @s iva.esb.entity_animation matches 1 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=iva.esb.entity.copper_golem_thunder] run function iva.esb:api/rotation_motion {scale_x:-.25, scale_y:.4, scale_z:-.25}
+execute if score @s iva.esb.entity_animation matches 1 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=iva.esb.entity.copper_golem_thunder] run function iva.esb:api/rotation_motion {scale_x:-.25, scale_y:.3, scale_z:-.25}
 execute if score @s iva.esb.entity_animation matches 25 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=!iva.esb.entity_boss_phase2,tag=iva.esb.entity.copper_golem_thunder] at @s run function iva.esb:entity/copper_golem/attack/energy_ball/run_3
 execute if score @s iva.esb.entity_animation matches 25 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=iva.esb.entity_boss_phase2,tag=iva.esb.entity.copper_golem_thunder] at @s run function iva.esb:entity/copper_golem/attack/energy_ball/run_5
 

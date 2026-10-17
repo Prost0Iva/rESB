@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:slots": {
+      "weapon.mainhand": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "iva.esb.pickaxe_level": [
+              "relict"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

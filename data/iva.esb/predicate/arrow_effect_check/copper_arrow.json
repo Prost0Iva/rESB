@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:nbt": {
+        "item": {
+            "components": {
+                "minecraft:potion_contents": {
+                    "custom_effects": [
+                        {
+                            "id":"minecraft:unluck",
+                            "amplifier": 23,
+                            "duration": 232323
+                        }
+                    ]
+                }
+            }
+        }
+    }
+  }
+}
