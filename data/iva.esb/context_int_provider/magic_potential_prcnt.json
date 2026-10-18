@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:div",
+  "left": {
+    "type": "minecraft:mul",
+    "inputs": [
+      {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "iva.esb.magic_potential"
+      },
+      100
+    ]
+  },
+  "right": {
+    "type": "minecraft:score",
+    "target": "this",
+    "score": "iva.esb.max_magic_potential"
+  }
+}

@@ -1,0 +1,1 @@
+execute as @e[type=item_display,tag=iva.esb.entity.ice_chunk] run function iva.esb:entity/iceologer/attack/ice_chunk/ice_chunk
