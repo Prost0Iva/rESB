@@ -1,3 +1,3 @@
-summon item_display ~ ~ ~ {Tags:["iva.esb.entity.ice_chunk"],item:{id:"egg",components:{item_model:"iva.esb:entity/ice_chunk",potion_contents:{custom_color:-9}}},teleport_duration:2}
-execute if entity @s[type=player] run data modify entity @n[type=item_display,tag=iva.esb.entity.ice_chunk,distance=...1] Rotation[0] set from entity @s Rotation[0]
-execute if entity @s[type=player] run data modify entity @n[type=item_display,tag=iva.esb.entity.ice_chunk,distance=...1] Rotation[2] set from entity @s Rotation[2]
+summon item_display ~ ~ ~ {Tags:["iva.esb.entity.ice_chunk"],item:{id:"egg",components:{item_model:"iva.esb:entity/ice_chunk",potion_contents:{custom_color:-9},custom_data:{}}},teleport_duration:2}
+scoreboard players operation @n[type=item_display,tag=iva.esb.entity.ice_chunk,distance=...1] iva.esb.entity_id = @s iva.esb.entity_id
+execute if entity @s[type=player] run tag @n[type=item_display,tag=iva.esb.entity.ice_chunk,distance=...1] add iva.esb.from_player
