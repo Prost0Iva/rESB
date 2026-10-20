@@ -1,0 +1,1 @@
+$bossbar remove $(bossbar_temp_id)

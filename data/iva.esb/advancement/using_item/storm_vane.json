@@ -9,7 +9,7 @@
           "scores": {
             "iva.esb.magic_attack_speed": 0,
             "iva.esb.magic_potential": {
-              "min": 7500
+              "min": 1
             }
           }
         },

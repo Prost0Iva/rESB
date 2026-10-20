@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:set_damage",
+  "damage": {
+    "type": "minecraft:negate",
+    "input": {
+      "type": "minecraft:div",
+      "left": 1.1,
+      "right": {
+        "type": "minecraft:from_int",
+        "input": {
+          "type": "minecraft:score",
+          "target": "this",
+          "score": "iva.esb.player_used_item_max_damage"
+        }
+      }
+    }
+  },
+  "add": true
+}

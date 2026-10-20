@@ -34,13 +34,11 @@
     "#minecraft:skulls",
     "#minecraft:underwater_bonemeals",
     "#minecraft:wall_post_override",
-
     "#minecraft:crops",
     "#minecraft:cave_vines",
-    "#minecraft:tall_flowers",
+    "#minecraft:flowers",
     "#minecraft:small_flowers",
     "#minecraft:coral_plants",
-
     "minecraft:bedrock",
     "minecraft:barrier",
     "minecraft:light",
@@ -64,7 +62,6 @@
     "minecraft:test_instance_block",
     "minecraft:piston_head",
     "minecraft:moving_piston",
-
     "minecraft:spawner",
     "minecraft:trial_spawner",
     "minecraft:vault",
@@ -96,7 +93,6 @@
     "minecraft:creaking_heart",
     "minecraft:suspicious_sand",
     "minecraft:suspicious_gravel",
-
     "minecraft:water",
     "minecraft:lava",
     "minecraft:bubble_column",
@@ -179,7 +175,6 @@
     "minecraft:pale_hanging_moss",
     "minecraft:open_eyeblossom",
     "minecraft:closed_eyeblossom",
-
     "minecraft:leaf_litter",
     "minecraft:wildflowers",
     "minecraft:bush",

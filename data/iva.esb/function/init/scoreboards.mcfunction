@@ -9,6 +9,10 @@ scoreboard objectives add iva.esb.entity_health dummy
 
 scoreboard objectives add iva.esb.player_rotation_x dummy
 scoreboard objectives add iva.esb.player_death deathCount
+
+scoreboard objectives add iva.esb.player_used_item_max_damage dummy
+scoreboard objectives add iva.esb.player_used_item_damage dummy
+
 scoreboard objectives add iva.esb.raycast dummy
 scoreboard objectives add iva.esb.const dummy
 scoreboard players set #24000 iva.esb.const 24000
