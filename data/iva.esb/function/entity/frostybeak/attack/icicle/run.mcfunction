@@ -1,0 +1,2 @@
+execute anchored eyes positioned ^ ^ ^1 run summon item_display ~ ~ ~ {Tags:[iva.esb.entity.icicle],teleport_duration:2,item:{id:"egg",components:{item_model:"iva.esb:entity/icicle"}}}
+execute anchored eyes positioned ^ ^ ^1 run data modify entity @n[type=item_display,tag=iva.esb.entity.icicle,distance=...1] Rotation set from entity @s Rotation

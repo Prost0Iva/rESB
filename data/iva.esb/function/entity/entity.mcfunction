@@ -8,3 +8,5 @@ function iva.esb:entity/jellyfish/jellyfish
 function iva.esb:entity/taiga_sapling/taiga_sapling
 function iva.esb:entity/copper_golem/copper_golem
 function iva.esb:entity/iceologer/iceologer
+function iva.esb:entity/bonebeak/bonebeak
+function iva.esb:entity/frostybeak/frostybeak

@@ -6,4 +6,5 @@ execute if score @s iva.esb.entity_attack_freq matches ..0 if score @s iva.esb.e
 execute if score @s iva.esb.entity_attack_freq matches ..0 if score @s iva.esb.entity_attack_choose matches 33..65 as @e[type=item_display,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id] run function iva.esb:entity/copper_golem/animation/block_throw
 execute if score @s iva.esb.entity_attack_freq matches ..0 if score @s iva.esb.entity_attack_choose matches 66..100 as @e[type=item_display,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id] run function iva.esb:entity/copper_golem/animation/shock_wave
 
-execute if score @s iva.esb.entity_attack_freq matches ..0 store result score @s iva.esb.entity_attack_freq run random value 80..120
+execute if entity @s[tag=!iva.esb.entity_boss_phase2] if score @s iva.esb.entity_attack_freq matches ..0 store result score @s iva.esb.entity_attack_freq run random value 100..140
+execute if entity @s[tag=iva.esb.entity_boss_phase2] if score @s iva.esb.entity_attack_freq matches ..0 store result score @s iva.esb.entity_attack_freq run random value 60..100

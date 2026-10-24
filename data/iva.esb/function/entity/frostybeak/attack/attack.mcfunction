@@ -1,0 +1,1 @@
+execute as @e[type=item_display,tag=iva.esb.entity.icicle] run function iva.esb:entity/frostybeak/attack/icicle/icicle

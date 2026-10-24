@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:all_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "minecraft:location": {
+          "dimension": "minecraft:overworld",
+          "can_see_sky": true
+        }
+      }
+    },
+    {
+      "type": "minecraft:weather_check",
+      "raining": false
+    },
+    {
+      "type": "minecraft:inverted",
+      "term": {
+        "type": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:location": {
+            "fluid": {
+              "fluids": "#minecraft:water"
+            }
+          }
+        }
+      }
+    },
+    {
+      "clock": "overworld",
+      "type": "minecraft:time_check",
+      "value": {
+        "min": 0,
+        "max": 12000
+      },
+      "period": 24000
+    }
+  ]
+}

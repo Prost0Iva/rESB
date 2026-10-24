@@ -1,0 +1,4 @@
+summon vex ~ ~ ~ {Tags:["iva.esb.entity_brain","iva.esb.entity.bonebeak"], active_effects:[{id:"invisibility",duration:-1,show_particles:false}], DeathLootTable:"iva.esb:entity/bonebeak",CustomName:{translate:"iva.esb:entity.bonebeak"},attributes:[{id:max_health,base:8},{id:follow_range,base:32}],CanPickUpLoot:false,Silent:true,equipment:{},drop_chances:{}}
+summon item_display ~ ~ ~ {Tags:["iva.esb.entity_model","iva.esb.entity.bonebeak"], item:{id:"egg",components:{item_model:"iva.esb:entity/bonebeak"}},teleport_duration:2}
+scoreboard players add #id iva.esb.entity_id 1
+scoreboard players operation @e[tag=iva.esb.entity.bonebeak,distance=...1,limit=2,sort=nearest] iva.esb.entity_id = #id iva.esb.entity_id
