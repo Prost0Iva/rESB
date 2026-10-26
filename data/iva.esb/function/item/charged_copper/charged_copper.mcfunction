@@ -26,3 +26,8 @@ execute as @a if predicate iva.esb:check_item/copper/charged_armor run scoreboar
 
 execute as @a if predicate iva.esb:check_item/copper/copper_pickaxe_mainhand if predicate iva.esb:is_thunder run item modify entity @s weapon.mainhand iva.esb:copper/charged_pickaxe
 execute as @a if predicate iva.esb:check_item/copper/charged_copper_pickaxe_mainhand unless predicate iva.esb:is_thunder run item modify entity @s weapon.mainhand iva.esb:copper/pickaxe
+
+execute as @a if predicate iva.esb:check_item/copper/golem_fist_mainhand if predicate iva.esb:is_thunder run item modify entity @s weapon.mainhand iva.esb:copper/charged_golem_fist
+execute as @a if predicate iva.esb:check_item/copper/golem_fist_offhand if predicate iva.esb:is_thunder run item modify entity @s weapon.offhand iva.esb:copper/charged_golem_fist
+execute as @a if predicate iva.esb:check_item/copper/charged_golem_fist_mainhand unless predicate iva.esb:is_thunder run item modify entity @s weapon.mainhand iva.esb:copper/golem_fist
+execute as @a if predicate iva.esb:check_item/copper/charged_golem_fist_offhand unless predicate iva.esb:is_thunder run item modify entity @s weapon.offhand iva.esb:copper/golem_fist

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_data": {
+      "iva.esb.item":"golem_fist"
+    },
+    "!minecraft:consumable": {},
+    "!minecraft:lore": {},
+    "minecraft:item_model": "iva.esb:golem_fist"
+  }
+}

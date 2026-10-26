@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "iva.esb.item": "ominous_ice_bottle"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "iva.esb:item/ominous_ice_bottle/use"
+  }
+}

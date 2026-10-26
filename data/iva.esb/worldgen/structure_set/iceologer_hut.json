@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "iva.esb:iceologer_hut",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 232323,
+    "spacing": 20,
+    "separation": 7
+  }
+}

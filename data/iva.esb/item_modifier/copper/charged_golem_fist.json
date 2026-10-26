@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_data": {
+        "iva.esb.usable_item":true,
+        "iva.esb.item":"charged_golem_fist",
+        "iva.esb.magic_attack_speed":35,
+        "iva.esb.magic_potential_cost":600
+    },
+    "minecraft:consumable": {"consume_seconds":2000000000},
+    "minecraft:lore": [
+        {"text":""},
+        {"translate":"item.modifiers.magic_potential","color":"gray","italic":false},
+        {"color":"dark_green","italic":false,"translate":"attribute.modifier.equals.0","with":[" 7.5",{"translate":"attribute.name.magic_damage"}]},
+        {"color":"dark_green","italic":false,"translate":"attribute.modifier.equals.0","with":[" 1.75",{"translate":"attribute.name.magic_speed"}]},
+        {"color":"dark_green","italic":false,"translate":"attribute.modifier.equals.0","with":[" 60",{"translate":"attribute.name.magic_cost"}]}
+    ],
+    "minecraft:item_model": "iva.esb:charged_golem_fist"
+  }
+}
