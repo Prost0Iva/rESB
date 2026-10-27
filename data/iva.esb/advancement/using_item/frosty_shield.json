@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "block": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "blocked": true
+        }
+      }
+    },
+    "using": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+                "iva.esb.item": "frosty_shield"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "iva.esb:item/frosty_shield/use"
+  }
+}

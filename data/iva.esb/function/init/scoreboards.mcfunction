@@ -21,6 +21,7 @@ scoreboard objectives add iva.esb.furnace_lit_time dummy
 
 scoreboard objectives add iva.esb.glow_item_frame_use used:glow_item_frame
 scoreboard objectives add iva.esb.gray_glazed_terracotta_mined minecraft.mined:minecraft.gray_glazed_terracotta
+scoreboard objectives add iva.esb.fishing_rod_use used:fishing_rod
 
 scoreboard objectives add iva.esb.effect.conductivity dummy
 scoreboard objectives add iva.esb.effect.conductivity_freq dummy

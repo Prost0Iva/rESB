@@ -1,0 +1,2 @@
+execute if items block ~ ~ ~ container.15 jigsaw[custom_data={iva.esb.empty_slot:1b}] run item replace block ~ ~ ~ container.15 with fishing_rod[item_model="iva.esb:frozen_catcher",item_name={translate:"iva.esb:item.frozen_catcher"},rarity=uncommon,custom_data={iva.esb.item:"frozen_catcher",iva.esb.craft_result:1b},tooltip_style="iva.esb:uncommon",max_damage=200,repairable={items:blue_ice}]
+execute if entity @a[distance=..64,predicate=iva.esb:player_has_craft_result] run function iva.esb:block/live_crafting_table/count_-1

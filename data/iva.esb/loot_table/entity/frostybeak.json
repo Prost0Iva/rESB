@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:jigsaw",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "item_model":"iva.esb:ice_crystal",
+                "item_name":{"translate":"iva.esb:item.ice_crystal"},
+                "custom_data":{"iva.esb.item":"ice_crystal"},
+                "rarity":"uncommon",
+                "tooltip_style": "iva.esb:uncommon"
+              }
+            },
+            {
+              "type": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              },
+              "enchantment": "minecraft:looting"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

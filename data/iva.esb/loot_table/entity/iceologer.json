@@ -1,0 +1,85 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:ominous_bottle"
+          }
+        ],
+        "modifier": [
+          {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:ominous_bottle_amplifier":0,
+              "minecraft:item_name":{"translate":"iva.esb:item.ominous_ice_bottle"},
+              "item_model":"iva.esb:ominous_ice_bottle",
+              "custom_data":{"iva.esb.item":"ominous_ice_bottle"},
+              "minecraft:tooltip_style":"iva.esb:uncommon"
+            }
+          },
+            {
+              "type": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              },
+              "enchantment": "minecraft:looting"
+            }
+          ]
+        },
+        {
+      "rolls": 1,
+      "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:chain_command_block"
+          }
+        ],
+        "modifier": [
+            {
+            "type": "minecraft:set_components",
+            "components": {
+              "custom_data":{
+                "iva.esb.usable_item":true,
+                "iva.esb.item":"grimoire",
+                "iva.esb.magic_attack_speed":30,
+                "iva.esb.magic_potential_cost":450
+              },
+              "item_model":"iva.esb:grimoire",
+              "item_name":{"translate":"iva.esb:item.grimoire"},
+              "consumable":{"consume_seconds":2000000000},
+              "max_damage":230,
+              "repairable":{"items":"paper"},
+              "rarity":"common",
+              "!max_stack_size":{},
+              "damage":0,
+              "lore":[
+                {"text":""},
+                {"translate":"item.modifiers.magic_potential","color":"gray","italic":false},
+                {"color":"dark_green","italic":false,"translate":"attribute.modifier.equals.0","with":[" 6",{"translate":"attribute.name.magic_damage"}]},
+                {"color":"dark_green","italic":false,"translate":"attribute.modifier.equals.0","with":[" 1.5",{"translate":"attribute.name.magic_speed"}]},
+                {"color":"dark_green","italic":false,"translate":"attribute.modifier.equals.0","with":[" 45",{"translate":"attribute.name.magic_cost"}]}
+              ]
+            }
+          },
+            {
+              "type": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              },
+              "enchantment": "minecraft:looting"
+            }
+          ],
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.33
+          }
+        }
+      ]
+    }
