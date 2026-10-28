@@ -2,10 +2,10 @@ scoreboard objectives add iva.esb.entity_id dummy
 scoreboard objectives add iva.esb.entity_animation dummy
 scoreboard objectives add iva.esb.entity_attack_freq dummy
 scoreboard objectives add iva.esb.entity_attack_choose dummy
-scoreboard objectives add iva.esb.entity_sound dummy
 scoreboard objectives add iva.esb.entity_lifetime dummy
 scoreboard objectives add iva.esb.entity_motion dummy
 scoreboard objectives add iva.esb.entity_health dummy
+scoreboard objectives add iva.esb.entity_sounds_freq dummy
 
 scoreboard objectives add iva.esb.player_rotation_x dummy
 scoreboard objectives add iva.esb.player_death deathCount
@@ -13,6 +13,9 @@ scoreboard objectives add iva.esb.player_used_item_max_damage dummy
 scoreboard objectives add iva.esb.player_used_item_damage dummy
 
 scoreboard objectives add iva.esb.raycast dummy
+
+scoreboard objectives add iva.esb.entity_natural_spawn dummy
+scoreboard objectives add iva.esb.kill_counter dummy
 
 scoreboard objectives add iva.esb.block_place_param dummy
 scoreboard objectives add iva.esb.container_slots dummy

@@ -17,7 +17,8 @@
               "item_name": {"translate":"iva.esb:block.live_spruce_door"},
               "item_model": "iva.esb:block/live_spruce",
               "custom_model_data": {"strings": ["door_inventory"]},
-              "entity_data": {"id":"glow_item_frame", "Invisible":true, "Silent":true, "Tags":["iva.esb.block.live_spruce_door_placer"]}
+              "entity_data": {"id":"glow_item_frame", "Invisible":true, "Silent":true, "Tags":["iva.esb.block.live_spruce_door_placer"]},
+              "lore":[{"translate":"iva.esb:block.alt_placement","color":"gray","italic":false}]
             }
           }
         ]

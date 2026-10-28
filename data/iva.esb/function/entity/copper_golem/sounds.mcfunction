@@ -1,0 +1,1 @@
+execute if entity @s[nbt={HurtTime:10s}] run playsound minecraft:entity.copper_golem.hurt hostile @a ~ ~ ~ 1 0

@@ -6,6 +6,8 @@ execute if score @s iva.esb.entity_animation matches 1 store result entity @s it
 
 execute if score @s iva.esb.entity_animation matches 1 run effect give @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id] slowness 2 20 true
 execute if score @s iva.esb.entity_animation matches 20 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id] at @s positioned ^ ^.4 ^2 unless block ~ ~-1 ~ #iva.esb:not_movable run function iva.esb:entity/copper_golem/attack/block_throw/run
+execute if score @s iva.esb.entity_animation matches 20 at @s run playsound minecraft:item.mace.smash_ground hostile @a ~ ~ ~ 1 1.5
+execute if score @s iva.esb.entity_animation matches 29 at @s run playsound minecraft:item.mace.smash_air hostile @a ~ ~ ~ 1 1.5
 
 execute if score @s iva.esb.entity_animation matches 39.. run tag @s remove iva.esb.animation_playing
 execute if score @s iva.esb.entity_animation matches 39.. run tag @s remove iva.esb.animation_block_throw

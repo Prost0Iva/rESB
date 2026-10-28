@@ -1,0 +1,1 @@
+execute as @e[type=!#iva.esb:no_mob,type=!player,tag=!iva.esb.spawn_checked] run function iva.esb:world/natural_spawn

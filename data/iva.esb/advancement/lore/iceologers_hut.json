@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:command_block",
+      "components": {
+        "minecraft:item_model": "iva.esb:grimoire"
+      }
+    },
+    "title": {
+      "translate": "iva.esb:lore/iceologers_hut"
+    },
+    "description": {
+      "translate": "iva.esb:lore/iceologers_hut_description"
+    },
+    "frame": "task",
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "iva.esb:lore/root",
+  "criteria": {
+    "esb": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:location_check",
+          "predicate": {
+            "structures": "iva.esb:iceologer_hut"
+          }
+        }
+      }
+    }
+  }
+}

@@ -17,7 +17,8 @@
               "item_name": {"translate":"iva.esb:block.live_spruce_stairs"},
               "item_model": "iva.esb:block/live_spruce",
               "custom_model_data": {"strings": ["stairs/bottom_w"]},
-              "entity_data": {"id":"glow_item_frame", "Invisible":true, "Silent":true, "Tags":["iva.esb.block.live_spruce_stairs_placer"]}
+              "entity_data": {"id":"glow_item_frame", "Invisible":true, "Silent":true, "Tags":["iva.esb.block.live_spruce_stairs_placer"]},
+              "lore":[{"translate":"iva.esb:block.alt_placement","color":"gray","italic":false}]
             }
           }
         ]

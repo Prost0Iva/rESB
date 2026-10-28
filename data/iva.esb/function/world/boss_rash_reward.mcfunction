@@ -1,0 +1,1 @@
+give @s paper[custom_name={translate:"iva.esb:soon"},lore=[{translate:"iva.esb:thx"}]]

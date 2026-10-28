@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:command_block",
+      "components": {
+        "minecraft:item_model": "iva.esb:block/copper_pumpkin"
+      }
+    },
+    "title": {
+      "translate": "iva.esb:lore/copper_pumpkin"
+    },
+    "description": {
+      "translate": "iva.esb:lore/copper_pumpkin_description"
+    },
+    "frame": "task",
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "iva.esb:lore/root",
+  "criteria": {
+    "esb": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:glow_item_frame",
+            "components": {
+              "minecraft:custom_data": {
+                "iva.esb.block":"copper_pumpkin",
+                "iva.esb.craft_result": false
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-summon cod ~ ~ ~ {Tags:["iva.esb.entity_brain","iva.esb.entity.jellyfish"], active_effects:[{id:"invisibility",duration:-1,show_particles:false}], DeathLootTable:"iva.esb:entity/jellyfish",CustomName:{translate:"iva.esb:entity.jellyfish"}}
+summon cod ~ ~ ~ {Tags:["iva.esb.entity_brain","iva.esb.entity.jellyfish","iva.esb.spawn_checked"], active_effects:[{id:"invisibility",duration:-1,show_particles:false}], DeathLootTable:"iva.esb:entity/jellyfish",CustomName:{translate:"iva.esb:entity.jellyfish"}}
 summon item_display ~ ~ ~ {Tags:["iva.esb.entity_model","iva.esb.entity.jellyfish"], item:{id:"egg",components:{item_model:"iva.esb:entity/jellyfish"}},teleport_duration:2}
 scoreboard players add #id iva.esb.entity_id 1
 scoreboard players operation @e[tag=iva.esb.entity.jellyfish,distance=...1,limit=2,sort=nearest] iva.esb.entity_id = #id iva.esb.entity_id

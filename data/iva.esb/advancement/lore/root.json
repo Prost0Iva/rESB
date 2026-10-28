@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:command_block",
+      "components": {
+        "minecraft:item_model": "iva.esb:block/live_crafting_table"
+      }
+    },
+    "title": {
+      "translate": "iva.esb:lore/root"
+    },
+    "description": {
+      "translate": "iva.esb:lore/root_description"
+    },
+    "background": "iva.esb:block/live_spruce_planks",
+    "frame": "task",
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "esb": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

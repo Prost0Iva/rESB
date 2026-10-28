@@ -3,6 +3,7 @@ execute if score @s iva.esb.entity_animation matches 1 run tag @s add iva.esb.an
 execute if score @s iva.esb.entity_animation matches 1 run tag @s add iva.esb.animation_dash
 execute if score @s iva.esb.entity_animation matches 1 run data modify entity @s item.components."minecraft:custom_model_data" set value {strings:["dash"]}
 execute if score @s iva.esb.entity_animation matches 1 store result entity @s item.components."minecraft:potion_contents".custom_color int 1 run scoreboard players operation #gametime iva.esb.entity_animation %= #20 iva.esb.const
+execute if score @s iva.esb.entity_animation matches 1 at @s run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 1 .8
 
 execute if score @s iva.esb.entity_animation matches 5 as @e[type=vex,tag=iva.esb.entity.bonebeak,predicate=iva.esb:entity_id] at @s on target run rotate @n[distance=...1,type=vex,tag=iva.esb.entity.bonebeak,predicate=iva.esb:entity_id] facing entity @s
 execute if score @s iva.esb.entity_animation matches 5 as @e[type=vex,tag=iva.esb.entity.bonebeak,predicate=iva.esb:entity_id] at @s run function iva.esb:api/rotation_motion {scale_x:.17, scale_y:.17, scale_z:.17}

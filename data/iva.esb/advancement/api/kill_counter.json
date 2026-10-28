@@ -1,0 +1,62 @@
+{
+  "criteria": {
+    "frostybeak": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:nbt": {
+              "Tags": [
+                "iva.esb.entity.frostybeak"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "copper_golem": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:nbt": {
+              "Tags": [
+                "iva.esb.entity.copper_golem"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "copper_golem_thunder": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:nbt": {
+              "Tags": [
+                "iva.esb.entity.copper_golem_thunder"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "frostybeak",
+      "copper_golem",
+      "copper_golem_thunder"
+    ]
+  ],
+  "rewards": {
+    "function": "iva.esb:world/kill_counter"
+  }
+}

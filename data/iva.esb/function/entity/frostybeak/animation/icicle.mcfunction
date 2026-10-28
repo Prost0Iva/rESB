@@ -8,6 +8,8 @@ execute if score @s iva.esb.entity_animation matches 5 as @e[type=vex,tag=iva.es
 execute if score @s iva.esb.entity_animation matches 5 as @e[type=vex,tag=iva.esb.entity.frostybeak,predicate=iva.esb:entity_id,tag=!iva.esb.entity_boss_phase2] at @s run function iva.esb:entity/frostybeak/attack/icicle/run_5
 execute if score @s iva.esb.entity_animation matches 5 as @e[type=vex,tag=iva.esb.entity.frostybeak,predicate=iva.esb:entity_id,tag=iva.esb.entity_boss_phase2] at @s run function iva.esb:entity/frostybeak/attack/icicle/run_9
 
+execute if score @s iva.esb.entity_animation matches 5 at @s run playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 1 1.6
+
 execute if score @s iva.esb.entity_animation matches 19.. run data modify entity @s item.components."minecraft:custom_model_data" set value {}
 execute if score @s iva.esb.entity_animation matches 19.. run tag @s remove iva.esb.animation_playing
 execute if score @s iva.esb.entity_animation matches 19.. run tag @s remove iva.esb.animation_icicle

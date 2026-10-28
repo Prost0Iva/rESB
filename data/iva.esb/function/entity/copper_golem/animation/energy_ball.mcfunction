@@ -12,6 +12,8 @@ execute if score @s iva.esb.entity_animation matches 1 as @e[type=parched,tag=iv
 execute if score @s iva.esb.entity_animation matches 25 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=!iva.esb.entity_boss_phase2,tag=iva.esb.entity.copper_golem_thunder] at @s run function iva.esb:entity/copper_golem/attack/energy_ball/run_3
 execute if score @s iva.esb.entity_animation matches 25 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=iva.esb.entity_boss_phase2,tag=iva.esb.entity.copper_golem_thunder] at @s run function iva.esb:entity/copper_golem/attack/energy_ball/run_5
 
+execute if score @s iva.esb.entity_animation matches 25 at @s run playsound minecraft:block.beacon.activate hostile @a ~ ~ ~ 1 1.4
+
 execute if score @s iva.esb.entity_animation matches 39.. run tag @s remove iva.esb.animation_playing
 execute if score @s iva.esb.entity_animation matches 39.. run tag @s remove iva.esb.animation_energy_ball
 execute if score @s iva.esb.entity_animation matches 39.. run scoreboard players reset @s iva.esb.entity_animation

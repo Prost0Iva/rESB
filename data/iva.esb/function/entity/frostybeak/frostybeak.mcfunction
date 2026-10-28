@@ -7,6 +7,8 @@ execute as @e[type=vex,tag=iva.esb.entity.frostybeak] if score @s iva.esb.entity
 execute as @e[type=vex,tag=iva.esb.entity_brain,tag=iva.esb.entity.frostybeak] at @s if predicate iva.esb:undead_burn_condition run tp ~ ~-1000 ~
 execute as @e[type=vex,tag=iva.esb.entity.frostybeak] at @s unless entity @a[distance=..64] run tp ~ ~-1000 ~
 
+execute as @e[type=vex,tag=iva.esb.entity_brain,tag=iva.esb.entity.frostybeak] at @s run function iva.esb:entity/frostybeak/sounds
+
 function iva.esb:entity/frostybeak/spawn
 function iva.esb:entity/frostybeak/attack/attack
 
