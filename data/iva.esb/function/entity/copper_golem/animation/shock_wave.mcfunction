@@ -6,7 +6,7 @@ execute if score @s iva.esb.entity_animation matches 1 store result entity @s it
 
 execute if score @s iva.esb.entity_animation matches 1 run effect give @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id] slowness 2 20 true
 execute if score @s iva.esb.entity_animation matches 1 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=iva.esb.entity_boss_phase2,tag=!iva.esb.entity.copper_golem_thunder] run function iva.esb:api/rotation_motion {scale_x:.2, scale_y:.3, scale_z:.2}
-execute if score @s iva.esb.entity_animation matches 1 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=iva.esb.entity.copper_golem_thunder] run function iva.esb:api/rotation_motion {scale_x:.2, scale_y:.3, scale_z:.2}
+execute if score @s iva.esb.entity_animation matches 1 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=iva.esb.entity.copper_golem_thunder] run function iva.esb:api/rotation_motion {scale_x:.24, scale_y:.3, scale_z:.24}
 execute if score @s iva.esb.entity_animation matches 30 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id] at @s positioned ^ ^ ^2 run function iva.esb:entity/copper_golem/attack/shock_wave/run
 execute if score @s iva.esb.entity_animation matches 30 at @s run playsound minecraft:item.mace.smash_ground_heavy hostile @a ~ ~ ~ 1 1.6
 execute if score @s iva.esb.entity_animation matches 35 at @s run playsound minecraft:item.mace.smash_ground hostile @a ~ ~ ~ 1 1.7

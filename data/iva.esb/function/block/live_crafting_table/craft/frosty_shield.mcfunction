@@ -1,2 +1,3 @@
 execute if items block ~ ~ ~ container.15 jigsaw[custom_data={iva.esb.empty_slot:1b}] run item replace block ~ ~ ~ container.15 with shield[item_model="iva.esb:frosty_shield",item_name={translate:"iva.esb:item.frosty_shield"},rarity=uncommon,custom_data={iva.esb.item:"frosty_shield",iva.esb.craft_result:1b},tooltip_style="iva.esb:uncommon",max_damage=472,repairable={items:blue_ice}]
 execute if entity @a[distance=..64,predicate=iva.esb:player_has_craft_result] run function iva.esb:block/live_crafting_table/count_-1
+execute as @a[distance=..64,predicate=iva.esb:player_has_craft_result] run function iva.esb:block/live_crafting_table/remove_craft_result

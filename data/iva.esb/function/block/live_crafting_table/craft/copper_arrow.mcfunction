@@ -1,2 +1,3 @@
 execute if items block ~ ~ ~ container.15 jigsaw[custom_data={iva.esb.empty_slot:1b}] run item replace block ~ ~ ~ container.15 with tipped_arrow[custom_data={iva.esb.item:"copper_arrow","iva.esb.craft_result":true},item_name={"translate":"iva.esb:item.copper_arrow"},item_model="iva.esb:copper_arrow",potion_contents={custom_name:"iva.esb:item.copper_arrow",custom_color:-1,custom_effects:[{id:"unluck",amplifier:23,duration:232323}]},tooltip_display={hidden_components:["potion_contents"]}] 16
 execute if entity @a[distance=..64,predicate=iva.esb:player_has_craft_result] run function iva.esb:block/live_crafting_table/count_-1
+execute as @a[distance=..64,predicate=iva.esb:player_has_craft_result] run function iva.esb:block/live_crafting_table/remove_craft_result

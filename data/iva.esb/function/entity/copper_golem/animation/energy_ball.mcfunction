@@ -5,10 +5,11 @@ execute if score @s iva.esb.entity_animation matches 1 run data modify entity @s
 execute if score @s iva.esb.entity_animation matches 1 store result entity @s item.components."minecraft:potion_contents".custom_color int 1 run scoreboard players operation #gametime iva.esb.entity_animation %= #40 iva.esb.const
 
 execute if score @s iva.esb.entity_animation matches 1 run effect give @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id] slowness 2 20 true
+execute if score @s iva.esb.entity_animation matches 1 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=iva.esb.entity.copper_golem,tag=!iva.esb.entity.copper_golem_thunder,tag=iva.esb.entity_boss_phase2] run function iva.esb:api/rotation_motion {scale_x:-.16, scale_y:.3, scale_z:-.16}
 execute if score @s iva.esb.entity_animation matches 25 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=!iva.esb.entity_boss_phase2,tag=!iva.esb.entity.copper_golem_thunder] at @s run function iva.esb:entity/copper_golem/attack/energy_ball/run
 execute if score @s iva.esb.entity_animation matches 25 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=iva.esb.entity_boss_phase2,tag=!iva.esb.entity.copper_golem_thunder] at @s run function iva.esb:entity/copper_golem/attack/energy_ball/run_3
 
-execute if score @s iva.esb.entity_animation matches 1 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=iva.esb.entity.copper_golem_thunder] run function iva.esb:api/rotation_motion {scale_x:-.25, scale_y:.3, scale_z:-.25}
+execute if score @s iva.esb.entity_animation matches 1 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=iva.esb.entity.copper_golem_thunder] run function iva.esb:api/rotation_motion {scale_x:-.2, scale_y:.3, scale_z:-.2}
 execute if score @s iva.esb.entity_animation matches 25 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=!iva.esb.entity_boss_phase2,tag=iva.esb.entity.copper_golem_thunder] at @s run function iva.esb:entity/copper_golem/attack/energy_ball/run_3
 execute if score @s iva.esb.entity_animation matches 25 as @e[type=parched,tag=iva.esb.entity.copper_golem,predicate=iva.esb:entity_id,tag=iva.esb.entity_boss_phase2,tag=iva.esb.entity.copper_golem_thunder] at @s run function iva.esb:entity/copper_golem/attack/energy_ball/run_5
 
