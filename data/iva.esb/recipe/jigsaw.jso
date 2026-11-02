@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "show_notification": false,
-  "category": "misc",
-  "ingredient": "minecraft:jigsaw",
-  "result": "minecraft:jigsaw",
-  "cookingtime": 200
-}

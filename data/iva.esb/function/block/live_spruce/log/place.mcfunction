@@ -44,4 +44,5 @@ execute if entity @s[nbt={Facing:5b}] run summon item_display ~.5 ~1.0001 ~.5 {i
 execute if entity @s[nbt={Facing:5b}] run summon item_display ~.5 ~.5 ~1.0001 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["log"]}}},Tags:[iva.esb.block.side.z],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.001f,1f,1f],translation:[0f,0f,0f]},Rotation:[270.0f,90.0f]}
 
 setblock ~ ~ ~ spruce_log keep
+playsound minecraft:block.wood.place block @a ~ ~ ~ 1 .8
 kill @s

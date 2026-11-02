@@ -17,6 +17,6 @@ execute positioned ~-.0001 ~.5 ~.5 unless entity @n[type=item_display,distance=.
 execute positioned ~.5 ~.5 ~-.0001 unless entity @n[type=item_display,distance=...5,tag=iva.esb.block.side.-z] run summon item_display ~ ~ ~ {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/copper_pumpkin"}},Tags:[iva.esb.block.side.-z],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1f,1f,0.001f],translation:[0f,0f,0f]}}
 execute positioned ~1.0001 ~.5 ~.5 unless entity @n[type=item_display,distance=...5,tag=iva.esb.block.side.x] run summon item_display ~ ~ ~ {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/copper_pumpkin"}},Tags:[iva.esb.block.side.x],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1f,1f,0.001f],translation:[0f,0f,0f]},Rotation:[90.0f,0.0f]}
 
-
+playsound minecraft:block.copper_bulb.place block @a ~ ~ ~ 1 .8
 setblock ~ ~ ~ waxed_weathered_copper_bulb keep
 kill @s

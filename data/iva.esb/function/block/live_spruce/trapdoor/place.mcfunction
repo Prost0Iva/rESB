@@ -39,5 +39,5 @@ execute if score #block_top_position iva.esb.block_place_param matches 1 if scor
 #left_w
 execute if score #block_top_position iva.esb.block_place_param matches 1 if score #block_place_rotation iva.esb.block_place_param matches 45..134 run summon item_display ~.5 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_spruce",custom_model_data:{strings: ["trapdoor_top"]}}},Tags:[iva.esb.block.live_spruce_trapdoor,iva.esb.block.side.-y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1.001f,1.001f,1.001f],translation:[0f,0f,0f]},Rotation:[270.0f,0.0f]}
 execute if score #block_top_position iva.esb.block_place_param matches 1 if score #block_place_rotation iva.esb.block_place_param matches 45..134 run setblock ~ ~ ~ spruce_trapdoor[half=top,facing=east] keep
-
+playsound minecraft:block.wood.place block @a ~ ~ ~ 1 .8
 kill @s

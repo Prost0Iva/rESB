@@ -5,4 +5,5 @@ summon item_display ~1.0001 ~.5 ~.5 {item:{id:"glow_item_frame",components:{item
 summon item_display ~.5 ~1.0001 ~.5 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_crafting_table"}},Tags:[iva.esb.block.side.y],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1f,0.001f,1f],translation:[0f,0f,0f]}}
 summon item_display ~.5 ~.5 ~1.0001 {item:{id:"glow_item_frame",components:{item_model:"iva.esb:block/live_crafting_table"}},Tags:[iva.esb.block.side.z],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[1f,1f,0.001f],translation:[0f,0f,0f]}}
 setblock ~ ~ ~ barrel{CustomName:[{"translate": "space.-8"},{text:"\u0001",font:"iva.esb:gui",color:white},{"translate": "space.-151"},{translate:"container.crafting",color:gray}]} keep
+playsound minecraft:block.wood.place block @a ~ ~ ~ 1 .8
 kill @s
