@@ -6,9 +6,6 @@ execute if predicate iva.esb:check_item/copper/copper_bow_offhand if predicate i
 execute if predicate iva.esb:check_item/copper/charged_copper_bow_mainhand unless predicate iva.esb:is_thunder run item modify entity @s weapon.mainhand iva.esb:copper/bow
 execute if predicate iva.esb:check_item/copper/charged_copper_bow_offhand unless predicate iva.esb:is_thunder run item modify entity @s weapon.offhand iva.esb:copper/bow
 
-execute if predicate iva.esb:arrow_effect_check/copper_arrow_hit_entity run scoreboard players set @s iva.esb.effect.conductivity 100
-execute if predicate iva.esb:arrow_effect_check/copper_arrow_hit_entity run effect clear @s unluck
-
 execute if predicate iva.esb:check_item/copper/copper_helmet_head if predicate iva.esb:is_thunder run item modify entity @s armor.head iva.esb:copper/charged_helmet
 execute if predicate iva.esb:check_item/copper/charged_copper_helmet_head unless predicate iva.esb:is_thunder run item modify entity @s armor.head iva.esb:copper/helmet
 execute if predicate iva.esb:check_item/copper/copper_chestplate_chest if predicate iva.esb:is_thunder run item modify entity @s armor.chest iva.esb:copper/charged_chestplate

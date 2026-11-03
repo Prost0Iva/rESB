@@ -1,5 +1,5 @@
-scoreboard players set @a iva.esb.max_magic_potential 10000
-scoreboard players set @a iva.esb.magic_potential_regen 10
+scoreboard players set @s iva.esb.max_magic_potential 10000
+scoreboard players set @s iva.esb.magic_potential_regen 10
 execute unless score @s iva.esb.magic_potential matches -2147483648..2147483647 run scoreboard players set @s iva.esb.magic_potential 0
 execute if score @s iva.esb.magic_potential < @s iva.esb.max_magic_potential run scoreboard players operation @s iva.esb.magic_potential += @s iva.esb.magic_potential_regen
 execute if score @s iva.esb.magic_potential > @s iva.esb.max_magic_potential run scoreboard players operation @s iva.esb.magic_potential = @s iva.esb.max_magic_potential

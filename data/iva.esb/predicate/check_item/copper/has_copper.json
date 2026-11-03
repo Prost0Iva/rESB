@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    "iva.esb:check_item/copper/copper_sword_mainhand",
+    "iva.esb:check_item/copper/charged_copper_sword_mainhand",
+    "iva.esb:check_item/copper/copper_bow_mainhand",
+    "iva.esb:check_item/copper/copper_bow_offhand",
+    "iva.esb:check_item/copper/charged_copper_bow_mainhand",
+    "iva.esb:check_item/copper/charged_copper_bow_offhand",
+    "iva.esb:check_item/copper/copper_pickaxe_mainhand",
+    "iva.esb:check_item/copper/charged_copper_pickaxe_mainhand",
+    "iva.esb:check_item/copper/golem_fist_mainhand",
+    "iva.esb:check_item/copper/golem_fist_offhand",
+    "iva.esb:check_item/copper/charged_golem_fist_mainhand",
+    "iva.esb:check_item/copper/charged_golem_fist_offhand",
+    "iva.esb:check_item/copper/copper_helmet_head",
+    "iva.esb:check_item/copper/charged_copper_helmet_head",
+    "iva.esb:check_item/copper/copper_chestplate_chest",
+    "iva.esb:check_item/copper/charged_copper_chestplate_chest",
+    "iva.esb:check_item/copper/copper_leggings_legs",
+    "iva.esb:check_item/copper/charged_copper_leggings_legs",
+    "iva.esb:check_item/copper/copper_boots_feet",
+    "iva.esb:check_item/copper/charged_copper_boots_feet"
+  ]
+}

@@ -1,3 +1,0 @@
-execute if entity @s[tag=!iva.esb.entity.copper_arrow] if data entity @s weapon.components."minecraft:custom_data"."iva.esb.bow_copper_arrows" run tag @s add iva.esb.entity.copper_arrow
-execute if entity @s[tag=!iva.esb.entity.copper_arrow] if predicate iva.esb:arrow_effect_check/copper_arrow run tag @s add iva.esb.entity.copper_arrow
-execute if entity @s[tag=iva.esb.entity.copper_arrow] at @s run particle electric_spark ~ ~ ~ 0 0 0 0.1 1 force
