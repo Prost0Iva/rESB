@@ -4,9 +4,9 @@ execute if score @s iva.esb.entity_animation matches 1 run tag @s add iva.esb.an
 execute if score @s iva.esb.entity_animation matches 1 run data modify entity @s item.components."minecraft:custom_model_data" set value {strings:["attack"]}
 execute if score @s iva.esb.entity_animation matches 1 store result entity @s item.components."minecraft:potion_contents".custom_color int 1 run scoreboard players operation #gametime iva.esb.entity_animation %= #20 iva.esb.const
 
-execute if score @s iva.esb.entity_animation matches 5 as @e[type=vex,tag=iva.esb.entity.frostybeak,predicate=iva.esb:entity_id] at @s on target run rotate @n[distance=...1,type=vex,tag=iva.esb.entity.frostybeak,predicate=iva.esb:entity_id] facing entity @s
-execute if score @s iva.esb.entity_animation matches 5 as @e[type=vex,tag=iva.esb.entity.frostybeak,predicate=iva.esb:entity_id,tag=!iva.esb.entity_boss_phase2] at @s run function iva.esb:entity/frostybeak/attack/icicle/run_5
-execute if score @s iva.esb.entity_animation matches 5 as @e[type=vex,tag=iva.esb.entity.frostybeak,predicate=iva.esb:entity_id,tag=iva.esb.entity_boss_phase2] at @s run function iva.esb:entity/frostybeak/attack/icicle/run_9
+execute if score @s iva.esb.entity_animation matches 5 as @e[limit=1,distance=..64,type=vex,tag=iva.esb.entity.frostybeak,predicate=iva.esb:entity_id] at @s on target run rotate @n[distance=...1,type=vex,tag=iva.esb.entity.frostybeak,predicate=iva.esb:entity_id] facing entity @s
+execute if score @s iva.esb.entity_animation matches 5 as @e[limit=1,distance=..64,type=vex,tag=iva.esb.entity.frostybeak,predicate=iva.esb:entity_id,tag=!iva.esb.entity_boss_phase2] at @s run function iva.esb:entity/frostybeak/attack/icicle/run_5
+execute if score @s iva.esb.entity_animation matches 5 as @e[limit=1,distance=..64,type=vex,tag=iva.esb.entity.frostybeak,predicate=iva.esb:entity_id,tag=iva.esb.entity_boss_phase2] at @s run function iva.esb:entity/frostybeak/attack/icicle/run_9
 
 execute if score @s iva.esb.entity_animation matches 5 at @s run playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 1 1.6
 

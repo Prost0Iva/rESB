@@ -1,2 +1,2 @@
-execute as @a at @s if predicate iva.esb:check_item/ice_diver_head anchored eyes positioned ^ ^ ^ unless predicate iva.esb:is_water run effect give @s water_breathing 20 0 true
-execute as @a at @s if predicate iva.esb:check_item/ice_diver_head anchored eyes positioned ^ ^ ^ unless predicate iva.esb:is_water run effect give @s dolphins_grace 20 0 true
+effect give @s water_breathing 20 0 true
+effect give @s dolphins_grace 20 0 true

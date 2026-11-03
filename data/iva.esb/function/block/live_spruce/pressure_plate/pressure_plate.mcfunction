@@ -1,5 +1,3 @@
-execute as @e[type=glow_item_frame,tag=iva.esb.block.live_spruce_pressure_plate_placer] at @s align xyz if block ~ ~ ~ #air run function iva.esb:block/live_spruce/pressure_plate/place
-execute as @e[type=glow_item_frame,tag=iva.esb.block.live_spruce_pressure_plate_placer] at @s align xyz unless block ~ ~ ~ #air run function iva.esb:block/live_spruce/pressure_plate/destroy
-execute as @e[type=item_display,tag=iva.esb.block.live_spruce_pressure_plate] at @s align xyz unless block ~ ~ ~ spruce_pressure_plate run function iva.esb:block/live_spruce/pressure_plate/destroy
-execute as @e[type=item_display,tag=iva.esb.block.live_spruce_pressure_plate] at @s align xyz if block ~ ~ ~ spruce_pressure_plate[powered=false] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["pressure_plate"]}
-execute as @e[type=item_display,tag=iva.esb.block.live_spruce_pressure_plate] at @s align xyz if block ~ ~ ~ spruce_pressure_plate[powered=true] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["pressure_plate_powered"]}
+execute unless block ~ ~ ~ spruce_pressure_plate run function iva.esb:block/live_spruce/pressure_plate/destroy
+execute if block ~ ~ ~ spruce_pressure_plate[powered=false] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["pressure_plate"]}
+execute if block ~ ~ ~ spruce_pressure_plate[powered=true] run data modify entity @s item.components.minecraft:custom_model_data set value {strings:["pressure_plate_powered"]}

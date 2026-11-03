@@ -1,3 +1,3 @@
-execute as @a at @s anchored eyes positioned ^ ^ ^ if score @s iva.esb.fishing_rod_use matches 1.. if predicate iva.esb:check_item/frozen_catcher/mainhand run tag @n[type=fishing_bobber,tag=!iva.esb.fishing_lvl_1,distance=..1] add iva.esb.fishing_lvl_1
-execute as @a at @s anchored eyes positioned ^ ^ ^ if score @s iva.esb.fishing_rod_use matches 1.. if predicate iva.esb:check_item/frozen_catcher/offhand unless items entity @s weapon.offhand fishing_rod run tag @n[type=fishing_bobber,tag=!iva.esb.fishing_lvl_1,distance=..1] add iva.esb.fishing_lvl_1
+execute if predicate iva.esb:check_item/frozen_catcher/mainhand run tag @n[type=fishing_bobber,tag=!iva.esb.fishing_lvl_1,distance=..1] add iva.esb.fishing_lvl_1
+execute if predicate iva.esb:check_item/frozen_catcher/offhand unless items entity @s weapon.offhand fishing_rod run tag @n[type=fishing_bobber,tag=!iva.esb.fishing_lvl_1,distance=..1] add iva.esb.fishing_lvl_1
 #execute at @e[type=fishing_bobber,tag=iva.esb.fishing_lvl_1] run particle angry_villager

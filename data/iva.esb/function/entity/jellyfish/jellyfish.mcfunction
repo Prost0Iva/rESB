@@ -1,6 +1,4 @@
 execute as @e[type=item_display,tag=iva.esb.entity_model,tag=iva.esb.entity.jellyfish] run function iva.esb:entity/jellyfish/animation/animation
-function iva.esb:entity/jellyfish/spawn
-
 execute as @a if items entity @s weapon.mainhand cod_bucket[custom_name={translate:"iva.esb:entity.jellyfish"}] run item replace entity @s weapon.mainhand with cod_bucket[bucket_entity_data={NoAI:1b,Silent:1b,Invulnerable:1b},custom_name={translate:"iva.esb:item.jellyfish_bucket",italic:0b},item_model="iva.esb:jellyfish_bucket"]
 execute as @a if items entity @s weapon.offhand cod_bucket[custom_name={translate:"iva.esb:entity.jellyfish"}] run item replace entity @s weapon.offhand with cod_bucket[bucket_entity_data={NoAI:1b,Silent:1b,Invulnerable:1b},custom_name={translate:"iva.esb:item.jellyfish_bucket",italic:0b},item_model="iva.esb:jellyfish_bucket"]
 
