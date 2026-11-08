@@ -22,3 +22,4 @@ execute as @a[scores={iva.esb.glow_item_frame_use=1..}] run scoreboard players r
 execute as @a[scores={iva.esb.gray_glazed_terracotta_mined=1..}] run scoreboard players reset @s iva.esb.gray_glazed_terracotta_mined
 execute as @e[type=item,tag=!iva.esb.crafting_slot_item_checked] run function iva.esb:block/crafting_slot_item_check
 execute as @a if items entity @s iva.esb:player jigsaw[custom_data={iva.esb.empty_slot:1b}] run clear @s jigsaw[custom_data={iva.esb.empty_slot:1b}]
+execute as @a[predicate=iva.esb:player_has_craft_result] run item modify entity @s iva.esb:player {type:"minecraft:filtered",item_filter:{predicates:{"minecraft:custom_data":{iva.esb.craft_result:1b}}},on_pass:{type:"minecraft:set_count",count:0}}
