@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:slots": {
+      "weapon.mainhand": {
+        "items": "#minecraft:bundles",
+        "predicates": {
+          "minecraft:custom_data": {
+            "iva.esb.injector": true
+          }
+        }
+      }
+    }
+  }
+}

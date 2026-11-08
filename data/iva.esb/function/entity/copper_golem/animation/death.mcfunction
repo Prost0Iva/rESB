@@ -1,4 +1,5 @@
 scoreboard players add @s iva.esb.entity_animation 1
+execute if score @s iva.esb.entity_animation matches 1 run bossbar set iva.esb:copper_golem players
 execute if score @s iva.esb.entity_animation matches 1 run tag @s add iva.esb.animation_playing
 execute if score @s iva.esb.entity_animation matches 1 at @s run playsound minecraft:entity.copper_golem.death hostile @a ~ ~ ~ 1 0
 execute if score @s iva.esb.entity_animation matches 1 run data modify entity @s item.components."minecraft:custom_model_data" set value {strings:["death"]}

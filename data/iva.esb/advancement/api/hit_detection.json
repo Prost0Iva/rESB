@@ -1,5 +1,64 @@
 {
   "criteria": {
+    "injector_fail": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "type": "minecraft:inverted",
+          "term": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "iva.esb.injector_needle_count": 1,
+              "iva.esb.injector_vial_count": {
+                "min": 1
+              }
+            }
+          }
+        },
+        "damage": {
+          "source_entity": {
+            "minecraft:slots": {
+              "weapon.mainhand": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "iva.esb.injector": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "injector": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "iva.esb.injector_needle_count": 1,
+              "iva.esb.injector_vial_count": {
+                "min": 1
+            }
+          }
+        },
+        "damage": {
+          "source_entity": {
+            "minecraft:slots": {
+              "weapon.mainhand": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "iva.esb.injector": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "charged_copper_sword": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
@@ -833,7 +892,9 @@
     "requirements": [
         [
             "copper_arrow",
-            "charged_copper_sword"
+            "charged_copper_sword",
+            "injector",
+            "injector_fail"
         ],
         [
             "target",

@@ -1,0 +1,1 @@
+playsound minecraft:entity.item.break master @a ~ ~ ~ 1 1.25

@@ -13,6 +13,9 @@ execute as @e[type=item_display,tag=iva.esb.block.stalum_ore] at @s align xyz po
 #copper_furnace
 execute as @e[type=glow_item_frame,tag=iva.esb.block.copper_furnace_placer] at @s align xyz run function iva.esb:block/copper_furnace/place
 execute as @e[type=item_display,tag=iva.esb.block.copper_furnace] at @s align xyz positioned ~ ~1 ~ run function iva.esb:block/copper_furnace/copper_furnace
+#live_crafting_table
+execute as @e[type=glow_item_frame,tag=iva.esb.block.alchemy_table_placer] at @s align xyz run function iva.esb:block/alchemy_table/place
+execute as @e[type=item_display,tag=iva.esb.block.alchemy_table] at @s align xyz positioned ~ ~1 ~ run function iva.esb:block/alchemy_table/alchemy_table
 
 #api
 execute as @a[scores={iva.esb.glow_item_frame_use=1..}] run scoreboard players reset @s iva.esb.glow_item_frame_use

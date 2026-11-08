@@ -1,3 +1,6 @@
+#injector
+execute as @a[predicate=iva.esb:check_item/injector_mainhand] run function iva.esb:item/injector_api/api
+
 #copper
 execute as @e[type=!#iva.esb:no_mob,predicate=iva.esb:check_item/copper/has_copper] run function iva.esb:item/charged_copper/charged_copper
 execute as @e[type=#arrows,tag=iva.esb.entity.copper_arrow] at @s run particle electric_spark ~ ~ ~ 0 0 0 0.1 1

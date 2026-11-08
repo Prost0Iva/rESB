@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_model_data": {"strings":["needle"]},
+    "tooltip_display":{"hidden_components":["minecraft:attribute_modifiers"]}
+  }
+}

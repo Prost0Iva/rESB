@@ -1,2 +1,4 @@
 execute if entity @s[advancements={iva.esb:api/hit_detection={copper_arrow=true}}] as @e if score @s iva.esb.entity_hit_detection_id = $hit iva.esb.entity_hit_detection_id run scoreboard players set @s iva.esb.effect.conductivity 100
 execute if entity @s[advancements={iva.esb:api/hit_detection={charged_copper_sword=true}}] as @e if score @s iva.esb.entity_hit_detection_id = $hit iva.esb.entity_hit_detection_id run scoreboard players set @s iva.esb.effect.conductivity 100
+execute if entity @s[advancements={iva.esb:api/hit_detection={injector=true}}] as @e if score @s iva.esb.entity_hit_detection_id = $hit iva.esb.entity_hit_detection_id run function iva.esb:item/injector_api/hit
+execute if entity @s[advancements={iva.esb:api/hit_detection={injector_fail=true}}] run function iva.esb:item/injector_api/hit_fail

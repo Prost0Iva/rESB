@@ -28,10 +28,3 @@ scoreboard objectives add iva.esb.fishing_rod_use used:fishing_rod
 
 scoreboard objectives add iva.esb.effect.conductivity dummy
 scoreboard objectives add iva.esb.effect.conductivity_freq dummy
-
-scoreboard objectives add iva.esb.magic_potential dummy
-scoreboard objectives add iva.esb.max_magic_potential dummy
-scoreboard objectives add iva.esb.magic_potential_regen dummy
-scoreboard objectives add iva.esb.magic_potential_prcnt dummy
-scoreboard objectives add iva.esb.magic_attack_speed dummy
-scoreboard objectives add iva.esb.magic_potential_cost dummy

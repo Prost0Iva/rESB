@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_model_data": {"strings":[""]},
+    "tooltip_display":{"hidden_components":["minecraft:bundle_contents","minecraft:attribute_modifiers"]}
+  }
+}

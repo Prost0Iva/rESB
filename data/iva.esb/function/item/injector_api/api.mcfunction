@@ -1,0 +1,12 @@
+execute store result score @s iva.esb.injector_needle_count unless data entity @s SelectedItem.components."minecraft:bundle_contents".[{components:{"minecraft:custom_data":{iva.esb.needle:{}}}}].count if data entity @s SelectedItem.components."minecraft:bundle_contents".[{components:{"minecraft:custom_data":{iva.esb.needle:{}}}}]
+execute store result score @s iva.esb.injector_vial_count if data entity @s SelectedItem.components."minecraft:bundle_contents".[{components:{"minecraft:custom_data":{iva.esb.vial:{}}}}]
+
+execute unless score @s iva.esb.injector_needle_count matches 1 unless score @s iva.esb.injector_vial_count matches 1.. run item modify entity @s weapon.mainhand iva.esb:injector/injector
+execute if score @s iva.esb.injector_needle_count matches 1 unless score @s iva.esb.injector_vial_count matches 1.. run item modify entity @s weapon.mainhand iva.esb:injector/needle
+execute unless score @s iva.esb.injector_needle_count matches 1 if score @s iva.esb.injector_vial_count matches 1.. run item modify entity @s weapon.mainhand iva.esb:injector/vial
+execute if score @s iva.esb.injector_needle_count matches 1 if score @s iva.esb.injector_vial_count matches 1.. run item modify entity @s weapon.mainhand iva.esb:injector/full
+
+execute if score @s iva.esb.injector_needle_count matches 1 run function iva.esb:item/injector_api/attributes_needle
+execute unless score @s iva.esb.injector_needle_count matches 1 run function iva.esb:item/injector_api/attributes_no_needle
+
+#give @p light_gray_bundle[minecraft:item_model="iva.esb:injector",minecraft:custom_model_data={strings:[""]},minecraft:custom_data={iva.esb.item:"injector",iva.esb.injector:1b},minecraft:item_name={translate:"iva.esb:item.injector"},minecraft:tooltip_display={hidden_components:["minecraft:bundle_contents","minecraft:attribute_modifiers"]},lore=[{translate:"iva.esb:injector_tooltip",color:gray,italic:false},{text:""},{translate:"item.modifiers.mainhand",italic:false,color:gray},{color:dark_green,italic:false,translate:"attribute.modifier.equals.0",with:[" 0",{translate:"attribute.name.needle_damage"}]},{color:dark_green,italic:false,translate:"attribute.modifier.equals.0",with:[" 1",{translate:"attribute.name.attack_speed"}]}],minecraft:attribute_modifiers=[{type:attack_speed,id:"iva.esb:injector_attack_speed",amount:-3,operation:add_value,slot:mainhand},{type:attack_damage,id:"iva.esb:needle_damage",amount:0,operation:add_value,slot:mainhand}]]

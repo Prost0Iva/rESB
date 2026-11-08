@@ -1,0 +1,2 @@
+item modify entity @s weapon.mainhand {type:"minecraft:set_lore",entity:"this",lore:[{color:"dark_green",italic:false,translate:"attribute.modifier.equals.0",with:[{text:" 0"},{translate:"attribute.name.needle_damage"}]}],mode:"replace_section",offset:3}
+item modify entity @s weapon.mainhand {type:"minecraft:set_attributes",modifiers:[{attribute:"minecraft:attack_damage",id:"iva.esb:needle_damage",amount:0,operation:"add_value",slot:"mainhand"}],replace:0}
