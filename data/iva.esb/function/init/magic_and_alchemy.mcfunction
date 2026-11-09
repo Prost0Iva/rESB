@@ -7,3 +7,4 @@ scoreboard objectives add iva.esb.magic_potential_cost dummy
 
 scoreboard objectives add iva.esb.injector_needle_count dummy
 scoreboard objectives add iva.esb.injector_vial_count dummy
+scoreboard objectives add iva.esb.alcemy_table_vial_count dummy

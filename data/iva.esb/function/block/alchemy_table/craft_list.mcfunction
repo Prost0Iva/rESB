@@ -1,0 +1,3 @@
+execute store result score @s iva.esb.container_slots if data block ~ ~ ~ Items[]
+execute store result score @s iva.esb.alcemy_table_vial_count run data get block ~ ~ ~ Items[{Slot:13b}].count
+execute if score @s iva.esb.container_slots matches 24 if score @s iva.esb.alcemy_table_vial_count matches 16.. if predicate iva.esb:craft/alchemy_table/vial/empty if items block ~ ~ ~ iva.esb:alchemy_table_caft poisonous_potato[!custom_data] run function iva.esb:block/alchemy_table/craft/poison_vial

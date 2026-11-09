@@ -1,0 +1,201 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:all_of",
+      "terms": [
+        {
+          "type": "minecraft:location_check",
+          "predicate": {
+            "block": {
+              "nbt": {
+                "Items": [
+                  {
+                    "id": "#minecraft:planks",
+                    "Slot": 1
+                  },
+                  {
+                    "id": "#minecraft:planks",
+                    "Slot": 2
+                  },
+                  {
+                    "id": "minecraft:jigsaw",
+                    "Slot": 10,
+                    "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                  },
+                  {
+                    "id": "minecraft:jigsaw",
+                    "Slot": 11,
+                    "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                  },
+                  {
+                    "id": "#minecraft:planks",
+                    "Slot": 19
+                  },
+                  {
+                    "id": "#minecraft:planks",
+                    "Slot": 20
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "type": "all_of",
+          "terms": [
+            {
+              "type": "inverted",
+              "term": {
+                "type": "minecraft:location_check",
+                "predicate": {
+                  "block": {
+                    "nbt": {
+                      "Items": [
+                        {
+                          "Slot": 3
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "inverted",
+              "term": {
+                "type": "minecraft:location_check",
+                "predicate": {
+                  "block": {
+                    "nbt": {
+                      "Items": [
+                        {
+                          "Slot": 12
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "inverted",
+              "term": {
+                "type": "minecraft:location_check",
+                "predicate": {
+                  "block": {
+                    "nbt": {
+                      "Items": [
+                        {
+                          "Slot": 21
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "minecraft:all_of",
+      "terms": [
+        {
+          "type": "minecraft:location_check",
+          "predicate": {
+            "block": {
+              "nbt": {
+                "Items": [
+                  {
+                    "id": "#minecraft:planks",
+                    "Slot": 2
+                  },
+                  {
+                    "id": "#minecraft:planks",
+                    "Slot": 3
+                  },
+                  {
+                    "id": "minecraft:jigsaw",
+                    "Slot": 11,
+                    "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                  },
+                  {
+                    "id": "minecraft:jigsaw",
+                    "Slot": 12,
+                    "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                  },
+                  {
+                    "id": "#minecraft:planks",
+                    "Slot": 20
+                  },
+                  {
+                    "id": "#minecraft:planks",
+                    "Slot": 21
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "type": "all_of",
+          "terms": [
+            {
+              "type": "inverted",
+              "term": {
+                "type": "minecraft:location_check",
+                "predicate": {
+                  "block": {
+                    "nbt": {
+                      "Items": [
+                        {
+                          "Slot": 1
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "inverted",
+              "term": {
+                "type": "minecraft:location_check",
+                "predicate": {
+                  "block": {
+                    "nbt": {
+                      "Items": [
+                        {
+                          "Slot": 10
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "inverted",
+              "term": {
+                "type": "minecraft:location_check",
+                "predicate": {
+                  "block": {
+                    "nbt": {
+                      "Items": [
+                        {
+                          "Slot": 19
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

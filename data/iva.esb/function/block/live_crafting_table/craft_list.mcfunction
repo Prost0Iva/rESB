@@ -38,3 +38,7 @@ execute if predicate iva.esb:craft/live_crafting_table/copper_furnace run functi
 execute if score @s iva.esb.container_slots matches 20 if items block ~ ~ ~ iva.esb:live_crafting_table_caft minecraft:jigsaw[custom_data={iva.esb.item:"ice_crystal"}] if items block ~ ~ ~ iva.esb:live_crafting_table_caft minecraft:shield[!custom_data] run function iva.esb:block/live_crafting_table/craft/frosty_shield
 execute if score @s iva.esb.container_slots matches 20 if items block ~ ~ ~ iva.esb:live_crafting_table_caft minecraft:jigsaw[custom_data={iva.esb.item:"ice_crystal"}] if items block ~ ~ ~ iva.esb:live_crafting_table_caft minecraft:turtle_helmet[!custom_data] run function iva.esb:block/live_crafting_table/craft/ice_diver
 execute if score @s iva.esb.container_slots matches 20 if items block ~ ~ ~ iva.esb:live_crafting_table_caft minecraft:jigsaw[custom_data={iva.esb.item:"ice_crystal"}] if items block ~ ~ ~ iva.esb:live_crafting_table_caft minecraft:fishing_rod[!custom_data] run function iva.esb:block/live_crafting_table/craft/frozen_catcher
+execute if predicate iva.esb:craft/live_crafting_table/empty_vial run function iva.esb:block/live_crafting_table/craft/empty_vial
+execute if predicate iva.esb:craft/live_crafting_table/iron_needle run function iva.esb:block/live_crafting_table/craft/iron_needle
+execute if predicate iva.esb:craft/live_crafting_table/injector run function iva.esb:block/live_crafting_table/craft/injector
+execute if predicate iva.esb:craft/live_crafting_table/alchemy_table run function iva.esb:block/live_crafting_table/craft/alchemy_table

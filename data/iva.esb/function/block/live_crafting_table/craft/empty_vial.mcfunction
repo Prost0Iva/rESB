@@ -1,0 +1,3 @@
+execute if items block ~ ~ ~ container.15 jigsaw[custom_data={iva.esb.empty_slot:1b}] run item replace block ~ ~ ~ container.15 with jigsaw[minecraft:item_model="iva.esb:empty_vial",minecraft:max_stack_size=96,minecraft:custom_data={iva.esb.item:"empty_vial",iva.esb.vial:{empty_vial:1},"iva.esb.craft_result":true},minecraft:rarity=common,minecraft:item_name={translate:"iva.esb:item.empty_vial"}] 4
+execute if entity @a[distance=..64,predicate=iva.esb:player_has_craft_result] run function iva.esb:block/live_crafting_table/count_-1
+execute as @a[distance=..64,predicate=iva.esb:player_has_craft_result] run function iva.esb:block/live_crafting_table/remove_craft_result

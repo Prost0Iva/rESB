@@ -1,0 +1,171 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:all_of",
+      "terms": [
+        {
+          "type": "minecraft:location_check",
+          "predicate": {
+            "block": {
+              "nbt": {
+                "Items": [
+                  {
+                    "id": "minecraft:iron_nugget",
+                    "Slot": 2
+                  },
+                  {
+                    "id": "minecraft:iron_nugget",
+                    "Slot": 3
+                  },
+                  {
+                    "id": "minecraft:iron_ingot",
+                    "Slot": 10
+                  },
+                  {
+                    "id": "minecraft:iron_ingot",
+                    "Slot": 11
+                  },
+                  {
+                    "id": "minecraft:iron_nugget",
+                    "Slot": 12
+                  },
+                  {
+                    "id": "minecraft:iron_nugget",
+                    "Slot": 20
+                  },
+                  {
+                    "id": "minecraft:iron_ingot",
+                    "Slot": 21
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "type": "all_of",
+          "terms": [
+            {
+              "type": "inverted",
+              "term": {
+                "type": "minecraft:location_check",
+                "predicate": {
+                  "block": {
+                    "nbt": {
+                      "Items": [
+                        {
+                          "Slot": 1
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "inverted",
+              "term": {
+                "type": "minecraft:location_check",
+                "predicate": {
+                  "block": {
+                    "nbt": {
+                      "Items": [
+                        {
+                          "Slot": 19
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "minecraft:all_of",
+      "terms": [
+        {
+          "type": "minecraft:location_check",
+          "predicate": {
+            "block": {
+              "nbt": {
+                "Items": [
+                  {
+                    "id": "minecraft:iron_nugget",
+                    "Slot": 1
+                  },
+                  {
+                    "id": "minecraft:iron_nugget",
+                    "Slot": 2
+                  },
+                  {
+                    "id": "minecraft:iron_nugget",
+                    "Slot": 10
+                  },
+                  {
+                    "id": "minecraft:iron_ingot",
+                    "Slot": 11
+                  },
+                  {
+                    "id": "minecraft:iron_ingot",
+                    "Slot": 12
+                  },
+                  {
+                    "id": "minecraft:iron_ingot",
+                    "Slot": 19
+                  },
+                  {
+                    "id": "minecraft:iron_nugget",
+                    "Slot": 20
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "type": "all_of",
+          "terms": [
+            {
+              "type": "inverted",
+              "term": {
+                "type": "minecraft:location_check",
+                "predicate": {
+                  "block": {
+                    "nbt": {
+                      "Items": [
+                        {
+                          "Slot": 3
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "inverted",
+              "term": {
+                "type": "minecraft:location_check",
+                "predicate": {
+                  "block": {
+                    "nbt": {
+                      "Items": [
+                        {
+                          "Slot": 21
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
