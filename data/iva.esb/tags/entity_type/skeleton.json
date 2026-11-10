@@ -2,6 +2,9 @@
   "values": [
     "minecraft:skeleton",
     "minecraft:parched",
-    "minecraft:stray"
+    "minecraft:stray",
+    "minecraft:bogged",
+    "minecraft:wither_skeleton",
+    "minecraft:skeleton_horse"
   ]
 }

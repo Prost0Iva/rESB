@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:location_check",
+  "predicate": {
+    "block": {
+      "nbt": {
+        "Items": [
+          {
+            "id": "minecraft:jigsaw",
+            "Slot": 13,
+            "components": {"minecraft:custom_data": {"iva.esb.item":"poison_vial"}}
+          }
+        ]
+      }
+    }
+  }
+}

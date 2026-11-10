@@ -5,41 +5,531 @@
       "type": "minecraft:all_of",
       "terms": [
         {
-          "type": "minecraft:location_check",
-          "predicate": {
-            "block": {
-              "nbt": {
-                "Items": [
-                  {
-                    "id": "#minecraft:planks",
-                    "Slot": 1
-                  },
-                  {
-                    "id": "#minecraft:planks",
-                    "Slot": 2
-                  },
-                  {
-                    "id": "minecraft:jigsaw",
-                    "Slot": 10,
-                    "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
-                  },
-                  {
-                    "id": "minecraft:jigsaw",
-                    "Slot": 11,
-                    "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
-                  },
-                  {
-                    "id": "#minecraft:planks",
-                    "Slot": 19
-                  },
-                  {
-                    "id": "#minecraft:planks",
-                    "Slot": 20
+          "type": "minecraft:any_of",
+          "terms": [
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:oak_planks",
+                        "Slot": 1
+                      },
+                      {
+                        "id": "minecraft:oak_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 10,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:oak_planks",
+                        "Slot": 19
+                      },
+                      {
+                        "id": "minecraft:oak_planks",
+                        "Slot": 20
+                      }
+                    ]
                   }
-                ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:pale_oak_planks",
+                        "Slot": 1
+                      },
+                      {
+                        "id": "minecraft:pale_oak_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 10,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:pale_oak_planks",
+                        "Slot": 19
+                      },
+                      {
+                        "id": "minecraft:pale_oak_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:cherry_planks",
+                        "Slot": 1
+                      },
+                      {
+                        "id": "minecraft:cherry_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 10,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:cherry_planks",
+                        "Slot": 19
+                      },
+                      {
+                        "id": "minecraft:cherry_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:mangrove_planks",
+                        "Slot": 1
+                      },
+                      {
+                        "id": "minecraft:mangrove_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 10,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:mangrove_planks",
+                        "Slot": 19
+                      },
+                      {
+                        "id": "minecraft:mangrove_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:jungle_planks",
+                        "Slot": 1
+                      },
+                      {
+                        "id": "minecraft:jungle_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 10,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jungle_planks",
+                        "Slot": 19
+                      },
+                      {
+                        "id": "minecraft:jungle_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:birch_planks",
+                        "Slot": 1
+                      },
+                      {
+                        "id": "minecraft:birch_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 10,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:birch_planks",
+                        "Slot": 19
+                      },
+                      {
+                        "id": "minecraft:birch_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:spruce_planks",
+                        "Slot": 1
+                      },
+                      {
+                        "id": "minecraft:spruce_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 10,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:spruce_planks",
+                        "Slot": 19
+                      },
+                      {
+                        "id": "minecraft:spruce_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:poplar_planks",
+                        "Slot": 1
+                      },
+                      {
+                        "id": "minecraft:poplar_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 10,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:poplar_planks",
+                        "Slot": 19
+                      },
+                      {
+                        "id": "minecraft:poplar_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:bamboo_planks",
+                        "Slot": 1
+                      },
+                      {
+                        "id": "minecraft:bamboo_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 10,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:bamboo_planks",
+                        "Slot": 19
+                      },
+                      {
+                        "id": "minecraft:bamboo_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:crimson_planks",
+                        "Slot": 1
+                      },
+                      {
+                        "id": "minecraft:crimson_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 10,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:crimson_planks",
+                        "Slot": 19
+                      },
+                      {
+                        "id": "minecraft:crimson_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:warped_planks",
+                        "Slot": 1
+                      },
+                      {
+                        "id": "minecraft:warped_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 10,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:warped_planks",
+                        "Slot": 19
+                      },
+                      {
+                        "id": "minecraft:warped_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:acacia_planks",
+                        "Slot": 1
+                      },
+                      {
+                        "id": "minecraft:acacia_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 10,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:acacia_planks",
+                        "Slot": 19
+                      },
+                      {
+                        "id": "minecraft:acacia_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:dark_oak_planks",
+                        "Slot": 1
+                      },
+                      {
+                        "id": "minecraft:dark_oak_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 10,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:dark_oak_planks",
+                        "Slot": 19
+                      },
+                      {
+                        "id": "minecraft:dark_oak_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:glow_item_frame",
+                        "Slot": 1,
+                        "components": {"minecraft:custom_data": {"iva.esb.block":"live_spruce_planks"}}
+                      },
+                      {
+                        "id": "minecraft:glow_item_frame",
+                        "Slot": 2,
+                        "components": {"minecraft:custom_data": {"iva.esb.block":"live_spruce_planks"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 10,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:glow_item_frame",
+                        "Slot": 19,
+                        "components": {"minecraft:custom_data": {"iva.esb.block":"live_spruce_planks"}}
+                      },
+                      {
+                        "id": "minecraft:glow_item_frame",
+                        "Slot": 20,
+                        "components": {"minecraft:custom_data": {"iva.esb.block":"live_spruce_planks"}}
+                      }
+                    ]
+                  }
+                }
               }
             }
-          }
+          ]
         },
         {
           "type": "all_of",
@@ -103,41 +593,531 @@
       "type": "minecraft:all_of",
       "terms": [
         {
-          "type": "minecraft:location_check",
-          "predicate": {
-            "block": {
-              "nbt": {
-                "Items": [
-                  {
-                    "id": "#minecraft:planks",
-                    "Slot": 2
-                  },
-                  {
-                    "id": "#minecraft:planks",
-                    "Slot": 3
-                  },
-                  {
-                    "id": "minecraft:jigsaw",
-                    "Slot": 11,
-                    "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
-                  },
-                  {
-                    "id": "minecraft:jigsaw",
-                    "Slot": 12,
-                    "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
-                  },
-                  {
-                    "id": "#minecraft:planks",
-                    "Slot": 20
-                  },
-                  {
-                    "id": "#minecraft:planks",
-                    "Slot": 21
+          "type": "minecraft:any_of",
+          "terms": [
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:oak_planks",
+                        "Slot": 3
+                      },
+                      {
+                        "id": "minecraft:oak_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 12,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:oak_planks",
+                        "Slot": 21
+                      },
+                      {
+                        "id": "minecraft:oak_planks",
+                        "Slot": 20
+                      }
+                    ]
                   }
-                ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:pale_oak_planks",
+                        "Slot": 3
+                      },
+                      {
+                        "id": "minecraft:pale_oak_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 12,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:pale_oak_planks",
+                        "Slot": 21
+                      },
+                      {
+                        "id": "minecraft:pale_oak_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:cherry_planks",
+                        "Slot": 3
+                      },
+                      {
+                        "id": "minecraft:cherry_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 12,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:cherry_planks",
+                        "Slot": 21
+                      },
+                      {
+                        "id": "minecraft:cherry_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:mangrove_planks",
+                        "Slot": 3
+                      },
+                      {
+                        "id": "minecraft:mangrove_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 12,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:mangrove_planks",
+                        "Slot": 21
+                      },
+                      {
+                        "id": "minecraft:mangrove_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:jungle_planks",
+                        "Slot": 3
+                      },
+                      {
+                        "id": "minecraft:jungle_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 12,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jungle_planks",
+                        "Slot": 21
+                      },
+                      {
+                        "id": "minecraft:jungle_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:birch_planks",
+                        "Slot": 3
+                      },
+                      {
+                        "id": "minecraft:birch_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 12,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:birch_planks",
+                        "Slot": 21
+                      },
+                      {
+                        "id": "minecraft:birch_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:spruce_planks",
+                        "Slot": 3
+                      },
+                      {
+                        "id": "minecraft:spruce_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 12,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:spruce_planks",
+                        "Slot": 21
+                      },
+                      {
+                        "id": "minecraft:spruce_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:poplar_planks",
+                        "Slot": 3
+                      },
+                      {
+                        "id": "minecraft:poplar_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 12,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:poplar_planks",
+                        "Slot": 21
+                      },
+                      {
+                        "id": "minecraft:poplar_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:bamboo_planks",
+                        "Slot": 3
+                      },
+                      {
+                        "id": "minecraft:bamboo_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 12,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:bamboo_planks",
+                        "Slot": 21
+                      },
+                      {
+                        "id": "minecraft:bamboo_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:crimson_planks",
+                        "Slot": 3
+                      },
+                      {
+                        "id": "minecraft:crimson_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 12,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:crimson_planks",
+                        "Slot": 21
+                      },
+                      {
+                        "id": "minecraft:crimson_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:warped_planks",
+                        "Slot": 3
+                      },
+                      {
+                        "id": "minecraft:warped_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 12,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:warped_planks",
+                        "Slot": 21
+                      },
+                      {
+                        "id": "minecraft:warped_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:acacia_planks",
+                        "Slot": 3
+                      },
+                      {
+                        "id": "minecraft:acacia_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 12,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:acacia_planks",
+                        "Slot": 21
+                      },
+                      {
+                        "id": "minecraft:acacia_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:dark_oak_planks",
+                        "Slot": 3
+                      },
+                      {
+                        "id": "minecraft:dark_oak_planks",
+                        "Slot": 2
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 12,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:dark_oak_planks",
+                        "Slot": 21
+                      },
+                      {
+                        "id": "minecraft:dark_oak_planks",
+                        "Slot": 20
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": {
+                    "Items": [
+                      {
+                        "id": "minecraft:glow_item_frame",
+                        "Slot": 3,
+                        "components": {"minecraft:custom_data": {"iva.esb.block":"live_spruce_planks"}}
+                      },
+                      {
+                        "id": "minecraft:glow_item_frame",
+                        "Slot": 2,
+                        "components": {"minecraft:custom_data": {"iva.esb.block":"live_spruce_planks"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 12,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:jigsaw",
+                        "Slot": 11,
+                        "components": {"minecraft:custom_data": {"iva.esb.item":"empty_vial"}}
+                      },
+                      {
+                        "id": "minecraft:glow_item_frame",
+                        "Slot": 21,
+                        "components": {"minecraft:custom_data": {"iva.esb.block":"live_spruce_planks"}}
+                      },
+                      {
+                        "id": "minecraft:glow_item_frame",
+                        "Slot": 20,
+                        "components": {"minecraft:custom_data": {"iva.esb.block":"live_spruce_planks"}}
+                      }
+                    ]
+                  }
+                }
               }
             }
-          }
+          ]
         },
         {
           "type": "all_of",

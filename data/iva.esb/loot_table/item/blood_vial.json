@@ -1,0 +1,27 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:jigsaw"
+          }
+        ],
+        "modifier": [
+          {
+            "type": "minecraft:set_components",
+            "components": {
+                "minecraft:item_model":"iva.esb:vial",
+                "minecraft:potion_contents":{"custom_color":12786973},
+                "minecraft:max_stack_size":96,
+                "minecraft:custom_data":{"iva.esb.item":"vial","iva.esb.vial":{"blood":1},"iva.esb.craft_result":false},
+                "minecraft:rarity":"common",
+                "minecraft:item_name":{"translate":"iva.esb:item.blood_vial"},
+                "minecraft:tooltip_display":{"hidden_components":["minecraft:potion_contents"]}
+            }
+          }
+        ]
+      }
+    ]
+  }

@@ -1,2 +1,2 @@
 item modify entity @p[distance=..0] weapon.mainhand {type:"minecraft:modify_contents",component:"minecraft:bundle_contents",modifier:{type:"minecraft:filtered",item_filter:{items:"minecraft:jigsaw",predicates:{"minecraft:custom_data":{iva.esb.vial:{empty_vial:1}}}},on_pass:{type:"minecraft:set_count",count:-1,add:1}}}
-say empty_vial
+execute if entity @s[type=!#iva.esb:skeleton,tag=!iva.esb.entity.bonebeak] at @s run loot spawn ~ ~1 ~ loot iva.esb:item/blood_vial
