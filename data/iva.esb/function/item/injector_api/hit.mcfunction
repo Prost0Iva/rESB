@@ -6,3 +6,4 @@ execute if data storage iva.esb:item injector.vial.components."minecraft:custom_
 execute if data storage iva.esb:item injector.vial.components."minecraft:custom_data"."iva.esb.vial".slowness run function iva.esb:item/injector_api/vials/slowness
 execute if data storage iva.esb:item injector.vial.components."minecraft:custom_data"."iva.esb.vial".weakness run function iva.esb:item/injector_api/vials/weakness
 #execute as @p[distance=..0] run item modify entity @s weapon.mainhand {type:"minecraft:set_contents",component:"minecraft:bundle_contents",entries:[{type:"minecraft:slots",slot_source:{type:"minecraft:contents",slot_source:{type:"minecraft:slot_range",source:"this",slots:"weapon.mainhand"},component:"minecraft:bundle_contents"}}]}
+execute as @p[distance=..0] run function iva.esb:item/injector_api/needle_durability

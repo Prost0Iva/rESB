@@ -1,0 +1,1 @@
+execute as @e[type=item_display,tag=iva.esb.entity.magic_ball] run function iva.esb:entity/projectile/magic_ball/magic_ball

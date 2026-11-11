@@ -47,7 +47,7 @@
                 "iva.esb.usable_item":true,
                 "iva.esb.item":"grimoire",
                 "iva.esb.magic_attack_speed":30,
-                "iva.esb.magic_potential_cost":450
+                "iva.esb.magic_potential_cost":950
               },
               "item_model":"iva.esb:grimoire",
               "item_name":{"translate":"iva.esb:item.grimoire"},
@@ -62,7 +62,7 @@
                 {"translate":"item.modifiers.magic_potential","color":"gray","italic":false},
                 {"color":"dark_green","italic":false,"translate":"attribute.modifier.equals.0","with":[" 6",{"translate":"attribute.name.magic_damage"}]},
                 {"color":"dark_green","italic":false,"translate":"attribute.modifier.equals.0","with":[" 1.5",{"translate":"attribute.name.magic_speed"}]},
-                {"color":"dark_green","italic":false,"translate":"attribute.modifier.equals.0","with":[" 45",{"translate":"attribute.name.magic_cost"}]}
+                {"color":"dark_green","italic":false,"translate":"attribute.modifier.equals.0","with":[" 95",{"translate":"attribute.name.magic_cost"}]}
               ]
             }
           },

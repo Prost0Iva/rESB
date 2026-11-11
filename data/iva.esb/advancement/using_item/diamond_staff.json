@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "iva.esb.magic_attack_speed": 0,
+            "iva.esb.magic_potential": {
+              "min": 930
+            }
+          }
+        },
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "iva.esb.item": "diamond_staff"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "iva.esb:item/diamond_staff/use"
+  }
+}

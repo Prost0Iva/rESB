@@ -6,6 +6,8 @@ execute as @a unless score @s iva.esb.entity_id matches -2147483648..2147483647 
 
 execute as @e[tag=iva.esb.boss] run function iva.esb:entity/bossbar
 
+function iva.esb:entity/projectile/projectile
+
 #jellyfish
 execute as @e[type=cod,nbt={CustomName:{translate:"iva.esb:item.jellyfish_bucket"}}] run function iva.esb:entity/jellyfish/spawn
 execute as @e[type=marker,tag=iva.esb.entity.jellyfish_spawner] run function iva.esb:entity/jellyfish/spawn

@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:modify_contents",
+  "component": "minecraft:bundle_contents",
+  "modifier": {
+    "type": "minecraft:filtered",
+    "item_filter": {
+      "items": "minecraft:jigsaw",
+      "predicates": {
+        "minecraft:custom_data": {
+          "iva.esb.needle": {}
+        }
+      }
+    },
+    "on_pass": [
+      {
+        "type": "minecraft:copy_custom_data",
+        "source": {
+          "type": "minecraft:storage",
+          "source": "iva.esb:item"
+        },
+        "ops": [
+          {
+            "source": "injector.needle_durability",
+            "target": "\"iva.esb.needle\".durability",
+            "op": "replace"
+          }
+        ]
+      },
+      {
+        "type": "minecraft:set_lore",
+        "entity":"this",
+        "lore": [
+          {
+            "color":"white",
+            "italic":false,
+            "translate": "iva.esb:injector_needle_durability",
+            "with": [
+              {
+                "source": "storage",
+                "storage": "iva.esb:item",
+                "nbt": "injector.needle_durability",
+                "plain": true
+              }
+            ]
+          }
+        ],
+        "mode": "replace_section",
+        "offset": 3
+      }
+    ]
+  }
+}

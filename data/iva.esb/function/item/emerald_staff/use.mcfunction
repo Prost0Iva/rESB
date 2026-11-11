@@ -1,0 +1,6 @@
+#give @p minecraft:chain_command_block[custom_data={iva.esb.usable_item:true,iva.esb.item:"emerald_staff",iva.esb.magic_attack_speed:19,iva.esb.magic_potential_cost:880},item_model="iva.esb:emerald_staff",item_name={translate:"iva.esb:item.emerald_staff"},max_damage=272,repairable={items:"emerald"},rarity=common,!max_stack_size,damage=0,lore=[{"text":""},{translate:"item.modifiers.magic_potential",color:"gray","italic":false},{color:dark_green,"italic":false,translate:"attribute.modifier.equals.0",with:[" 5",{translate:"attribute.name.magic_damage"}]},{color:dark_green,"italic":false,translate:"attribute.modifier.equals.0",with:[" 0.95",{translate:"attribute.name.magic_speed"}]},{color:dark_green,"italic":false,translate:"attribute.modifier.equals.0",with:[" 88",{translate:"attribute.name.magic_cost"}]}],kinetic_weapon={delay_ticks:5,damage_conditions:{max_duration_ticks:2000000000,min_speed:2000000000},knockback_conditions:{max_duration_ticks:2000000000,min_speed:2000000000},dismount_conditions:{max_duration_ticks:2000000000,min_speed:2000000000},sound:"block.amethyst_block.chime",damage_multiplier:0.0}]
+function iva.esb:entity/projectile/magic_ball/run_emerald
+
+function iva.esb:item/damage_using_item
+function iva.esb:item/magic_item_use
+advancement revoke @s only iva.esb:using_item/emerald_staff

@@ -42,3 +42,6 @@ execute if predicate iva.esb:craft/live_crafting_table/empty_vial run function i
 execute if predicate iva.esb:craft/live_crafting_table/iron_needle run function iva.esb:block/live_crafting_table/craft/iron_needle
 execute if predicate iva.esb:craft/live_crafting_table/injector run function iva.esb:block/live_crafting_table/craft/injector
 execute if predicate iva.esb:craft/live_crafting_table/alchemy_table run function iva.esb:block/live_crafting_table/craft/alchemy_table
+execute if predicate iva.esb:craft/live_crafting_table/amethyst_staff run function iva.esb:block/live_crafting_table/craft/amethyst_staff
+execute if predicate iva.esb:craft/live_crafting_table/emerald_staff run function iva.esb:block/live_crafting_table/craft/emerald_staff
+execute if predicate iva.esb:craft/live_crafting_table/diamond_staff run function iva.esb:block/live_crafting_table/craft/diamond_staff

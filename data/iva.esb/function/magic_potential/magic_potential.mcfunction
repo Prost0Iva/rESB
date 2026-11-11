@@ -11,8 +11,3 @@ execute if score @s iva.esb.magic_potential_prcnt matches ..99 run function iva.
 
 execute unless score @s iva.esb.magic_attack_speed matches -2147483648..2147483647 run scoreboard players set @s iva.esb.magic_attack_speed 0
 execute if score @s iva.esb.magic_attack_speed matches 1.. run scoreboard players remove @s iva.esb.magic_attack_speed 1
-
-execute if score @s iva.esb.magic_attack_speed matches 1.. if data entity @s SelectedItem.components."minecraft:custom_data"."iva.esb.usable_item" run item modify entity @s weapon.mainhand {type:"minecraft:set_components",components:{"!minecraft:consumable":{}}}
-execute if score @s iva.esb.magic_attack_speed matches 1.. if data entity @s equipment.offhand.components."minecraft:custom_data"."iva.esb.usable_item" run item modify entity @s weapon.offhand {type:"minecraft:set_components",components:{"!minecraft:consumable":{}}}
-execute if score @s iva.esb.magic_attack_speed matches ..0 if data entity @s SelectedItem.components."minecraft:custom_data"."iva.esb.usable_item" run item modify entity @s weapon.mainhand {type:"minecraft:set_components",components:{"minecraft:consumable":{"consume_seconds":2000000000}}}
-execute if score @s iva.esb.magic_attack_speed matches ..0 if data entity @s equipment.offhand.components."minecraft:custom_data"."iva.esb.usable_item" run item modify entity @s weapon.offhand {type:"minecraft:set_components",components:{"minecraft:consumable":{"consume_seconds":2000000000}}}

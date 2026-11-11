@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:modify_contents",
+  "component": "minecraft:bundle_contents",
+  "modifier": {
+    "type": "minecraft:filtered",
+    "item_filter": {
+      "items": "minecraft:jigsaw",
+      "predicates": {
+        "minecraft:custom_data": {
+          "iva.esb.needle": {}
+        }
+      }
+    },
+    "on_pass": {
+      "type": "minecraft:set_count",
+      "count": -1,
+      "add": true
+    }
+  }
+}
